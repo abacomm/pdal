@@ -255,7 +255,7 @@ nav {
     position: absolute;
     bottom: 0;
     object-fit: cover;
-    left: 3rem;
+    left: 1.5rem;
     border-radius: 50%;
 }
 
@@ -263,18 +263,17 @@ nav {
     margin-left: 4rem;
 }
 
-
 .testimonial-card__icon {
     width: 25px;
     height: 25px;
     margin-bottom: 1.5rem;
     position: absolute;
-    bottom: -.5rem;
-    right: 1.5rem;
+    bottom: 0;
+    right: 2rem;
 }
 
 .testimonial-card__detail {
-    padding: 1rem 1.5rem 1rem 3rem;
+    padding: 1rem;
 }
 
 .testimonial-card__text {
@@ -510,6 +509,10 @@ nav {
         height: 0;
         border-color: transparent;    
     }  
+
+    .testimonial-card__detail {
+        padding: 1rem 1.5rem 1rem 3rem;
+    }    
 
     .testimonial-card__image {
         width: 10.4rem;

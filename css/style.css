@@ -90,17 +90,13 @@ p {
     font-size: 1.125rem;
 }
 
-/* a {
-    text-decoration: none !important;
-} */
-
 .iphone-device {
     width: 260px;
+    margin: 0 auto;
 }
 
 .hero-title {
     color: #fff;
-    /* font-size: 2.5rem; */
 }
 
 .hero-subtitle {
@@ -131,7 +127,9 @@ section {
 .btn-apple, .btn-google {
     display: block;
     margin-top: 1rem;
-    width: 188px;
+    width: 220px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .bottom-icon {
@@ -226,7 +224,7 @@ nav {
 }
 
 .testimonial-card {
-    border: 1px solid rgba(43,41,45,0.20);
+    border-color: transparent;
     border-radius: 8px;
     margin-top: 3rem;
     transition: box-shadow .2s ease;
@@ -234,23 +232,44 @@ nav {
     display: flex;
 }
 
+.testimonial-card::after {
+    content: "";
+    position: absolute;
+    bottom: -1.5rem;
+    left: 1rem;
+    width: 92.5%;
+    height: 1px;
+    border: dashed 1px rgba(0, 0, 0, 0.12);    
+}
+
+
 .testimonial-card:hover {
     cursor: pointer;
-    box-shadow: 0 13px 18px -8px rgba(0,0,0,0.15), 0 11px 55px 10px rgba(0,0,0,0.07);
-    border-color: transparent;
-    border-radius: 8px;
 }
 
 .testimonial-card__image {
-    width: 10.4rem;
+    width: 60px;
+    height: 60px;
+    border: solid 2px #fff;
+    position: absolute;
+    bottom: 0;
     object-fit: cover;
+    left: 3rem;
+    border-radius: 50%;
 }
+
+.testimonial-card__author {
+    margin-left: 4rem;
+}
+
 
 .testimonial-card__icon {
     width: 25px;
     height: 25px;
-    /* transform: translateY(-1rem); */
     margin-bottom: 1.5rem;
+    position: absolute;
+    bottom: -.5rem;
+    right: 1.5rem;
 }
 
 .testimonial-card__detail {
@@ -474,6 +493,42 @@ nav {
     .btn-apple, .btn-google {
         display: inline-block;
     }
+
+    .testimonial-card {
+        border: 1px solid rgba(43,41,45,0.20);
+    }  
+
+    .testimonial-card:hover {
+        box-shadow: 0 13px 18px -8px rgba(0,0,0,0.15), 0 11px 55px 10px rgba(0,0,0,0.07);
+        border-color: transparent;
+        border-radius: 8px;
+    }    
+    
+    .testimonial-card::after {
+        width: 0;
+        height: 0;
+        border-color: transparent;    
+    }  
+
+    .testimonial-card__image {
+        width: 10.4rem;
+        height: inherit;
+        border-radius: 0;
+        border: none;
+        position: relative;
+        left: 0;
+    }
+
+    .testimonial-card__icon {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-bottom: 1.5rem;
+    } 
+    
+    .testimonial-card__author {
+        margin-left: 0;
+    }    
 }
 
 @media only screen and (min-width: 768px) {

@@ -625,7 +625,10 @@ nav {
         background-size: cover;
         background-position: right;    
         padding-bottom: 0;
-    }        
+    }
+    .webp .header{
+        background: linear-gradient(131deg, rgba(15, 22, 29, .93) 0%, rgba(40, 49, 57, .93) 80%), url("../img/img-hero-bg.webp");
+    }
     
     .iphone-device {
         width: 335px;

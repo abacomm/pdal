@@ -231,6 +231,9 @@ nav {
     transition: box-shadow .2s ease;
     overflow: hidden;
     display: flex;
+    background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 51%, rgba(255,255,255,1) 100%);
+    background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 50%,rgba(255,255,255,1) 51%,rgba(255,255,255,1) 100%);
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 50%,rgba(255,255,255,1) 51%,rgba(255,255,255,1) 100%);
 }
 
 .testimonial-card::after {

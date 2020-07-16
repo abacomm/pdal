@@ -53,6 +53,7 @@ a.nav-item.nav-link:hover{
 }
 .navbar-toggler-dark {
     color: #333;
+    display: none;
     background-color: transparent;
     border: none;
 }
@@ -120,6 +121,7 @@ p {
     will-change: opacity;
     transition: all .3s ease-in-out;
     visibility: hidden;
+    border-bottom: 1px solid rgba(0,0,0,.12);
     transform: translateY(-100px);
 }
 .fixed-nav.active{
@@ -138,6 +140,7 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid rgba(0,0,0,.12);
 }
 .fixed-nav .submenu a {
     color: rgba(43,41,45,0.60);
@@ -728,6 +731,9 @@ nav {
 }
 
 @media all and (max-width: 991px){
+    .navbar-toggler-dark {
+        display: block;
+    }
     .fixed-nav .container{
         width: calc(100% - 20px);
         max-width: calc(100% - 20px);

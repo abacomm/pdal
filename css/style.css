@@ -140,7 +140,7 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid rgba(0,0,0,.12);
+
 }
 .fixed-nav .submenu a {
     color: rgba(43,41,45,0.60);
@@ -748,6 +748,7 @@ nav {
         height: 0;
         overflow: hidden;
         transition: all .2s ease-in-out;
+        border-bottom: 1px solid rgba(0,0,0,.12);
     }
     .fixed-nav .submenu.active{
         height: 150px;

@@ -30,6 +30,13 @@ a.nav-item.nav-link {
     letter-spacing: 0.75px;
     text-transform: uppercase;
     font-weight: 700;
+    transition: all .2s ease-in-out;
+    border-bottom: 1px dotted transparent;
+}
+a.nav-item.nav-link:hover{
+    color: #ddd !important;
+    border-bottom: 1px dotted #fff;
+    transition: all .2s ease-in-out;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -44,7 +51,14 @@ a.nav-item.nav-link {
     color: #fff;
     border-color: transparent;
 }
-
+.navbar-toggler-dark {
+    color: #333;
+    background-color: transparent;
+    border: none;
+}
+.navbar-toggler-dark .navbar-toggler-icon{
+  background-image: url('../img/menu-toggle-fixed.svg');  
+}
 .navbar-expand-lg .navbar-nav .nav-link:last-child {
     padding-right: 0;
 }
@@ -94,7 +108,46 @@ p {
     width: 260px;
     margin: 0 auto;
 }
-
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75px;
+    z-index: 1000;
+    background: #fff;
+    opacity: 0;
+    will-change: opacity;
+    transition: all .3s ease-in-out;
+    visibility: hidden;
+    transform: translateY(-100px);
+}
+.fixed-nav.active{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: all .3s ease-in-out;
+}
+.fixed-nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fixed-nav .submenu {
+    width: 730px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fixed-nav .submenu a {
+    color: rgba(43,41,45,0.60);
+}
+.fixed-nav .submenu a.nav-item.nav-link:hover{
+    color: #000  !important;
+}
+.fixed-nav .navbar-brand{
+    padding: 0;
+}
 .hero-title {
     color: #fff;
 }
@@ -131,6 +184,11 @@ section {
     margin-left: auto;
     margin-right: auto;
     position: relative;
+    transition: all .2s ease-in-out;
+}
+.btn-apple:hover, .btn-google:hover{
+    transform: translateY(3px);
+    transition: all .2s ease-in-out;
 }
 
 .bottom-icon {
@@ -405,6 +463,11 @@ nav {
     text-align: center;
     border-style: none;
     color: #fff; 
+    transition: all .2s ease-in-out;
+}
+.newsletter-box__button:hover {
+    background: #f03146;
+    transition: all .2s ease-in-out;
 }
 
 .newsletter-box__disclaimer {
@@ -623,14 +686,14 @@ nav {
     }
 
     .header {
-        background: linear-gradient(131deg, rgba(15, 22, 29, .93) 0%, rgba(40, 49, 57, .93) 80%), url("../img/img-hero-background.png");
+        background: linear-gradient(131deg, rgba(15, 22, 29, .55) 0%, rgba(40, 49, 57, .55) 80%), url("../img/img-hero-background.png");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: right;    
         padding-bottom: 0;
     }
     .webp .header{
-        background: linear-gradient(131deg, rgba(15, 22, 29, .93) 0%, rgba(40, 49, 57, .93) 80%), url("../img/img-hero-background2.webp");
+        background: linear-gradient(131deg, rgba(15, 22, 29, 0.55) 0%, rgba(40, 49, 57, 0.55) 80%), url("../img/img-hero-background2.webp");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: right;    
@@ -661,5 +724,27 @@ nav {
         background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 70%, rgba(255,255,255,1) 71%, rgba(255,255,255,1) 100%);
         background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 70%,rgba(255,255,255,1) 71%,rgba(255,255,255,1) 100%);
         background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 70%,rgba(255,255,255,1) 71%,rgba(255,255,255,1) 100%);
+    }
+}
+
+@media all and (max-width: 991px){
+    .fixed-nav .container{
+        width: calc(100% - 20px);
+        max-width: calc(100% - 20px);
+    }
+    .fixed-nav .submenu{
+        position: absolute;
+        width: 100%;
+        top: 75px;
+        left: 0;
+        display: block;
+        background: #fff;
+        height: 0;
+        overflow: hidden;
+        transition: all .2s ease-in-out;
+    }
+    .fixed-nav .submenu.active{
+        height: 150px;
+        transition: all .2s ease-in-out;
     }
 }

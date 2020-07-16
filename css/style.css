@@ -623,14 +623,18 @@ nav {
     }
 
     .header {
-        background: linear-gradient(131deg, rgba(15, 22, 29, .93) 0%, rgba(40, 49, 57, .93) 80%), url("../img/img-hero-bg.png");
+        background: linear-gradient(131deg, rgba(15, 22, 29, .93) 0%, rgba(40, 49, 57, .93) 80%), url("../img/img-hero-background.png");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: right;    
         padding-bottom: 0;
     }
     .webp .header{
-        background: linear-gradient(131deg, rgba(15, 22, 29, .93) 0%, rgba(40, 49, 57, .93) 80%), url("../img/img-hero-bg.webp");
+        background: linear-gradient(131deg, rgba(15, 22, 29, .93) 0%, rgba(40, 49, 57, .93) 80%), url("../img/img-hero-background2.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;    
+        padding-bottom: 0;
     }
     
     .iphone-device {

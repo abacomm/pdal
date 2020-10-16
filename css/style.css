@@ -90,7 +90,7 @@ h3 {
 
 h4 {
     text-transform: uppercase;
-    letter-spacing: .7px;
+    letter-spacing: 0;
     font-size: 1rem;
 }
 
@@ -152,8 +152,8 @@ p {
     font-size: 1.125rem;
     color: #C3CBDB;
     line-height: 1.5;
+    max-width: 37.5rem;
 }
-
 
 section {
     margin-top: 5rem;
@@ -388,6 +388,10 @@ nav {
     color: #121A21;
     letter-spacing: -0.5px;
     font-weight: 800;
+}
+
+.cta-subtitle {
+    max-width: 33.5rem;
 }
 
 .cta-disclaimer {

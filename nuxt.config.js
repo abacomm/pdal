@@ -71,18 +71,14 @@ export default {
   },
   css: ['~/assets/styles/main.css', 'aos/dist/aos.css'],
   components: true,
-  buildModules: [
-    '@nuxtjs/eslint-module',
-    '@nuxtjs/stylelint-module',
-    '@nuxtjs/google-fonts',
-  ],
+  buildModules: ['@nuxtjs/eslint-module', '@nuxtjs/google-fonts'],
   modules: ['@nuxtjs/pwa', '@nuxt/content'],
   plugins: [{ src: '@/plugins/aos.js', mode: 'client' }],
   content: {},
   build: {},
   googleFonts: {
     families: {
-      OpenSans: [400, 700],
+      'Open+Sans': [400, 700],
     },
   },
 }

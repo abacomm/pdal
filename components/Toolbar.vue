@@ -57,16 +57,16 @@
             class="navbar-collapse justify-content-md-end"
           >
             <div class="navbar-nav mt-4 mt-lg-0">
-              <a class="nav-item nav-link" href="#features-section"
+              <a class="nav-item nav-link anchor" href="#features-section"
                 >Funcionalidades</a
               >
-              <a class="nav-item nav-link" href="#testimonials-section"
+              <a class="nav-item nav-link anchor" href="#testimonials-section"
                 >Depoimentos</a
               >
-              <a class="nav-item nav-link" href="#cta-section"
+              <a class="nav-item nav-link anchor" href="#cta-section"
                 >Baixe o aplicativo</a
               >
-              <a class="nav-item nav-link" href="#newsletter-section"
+              <a class="nav-item nav-link anchor" href="#newsletter-section"
                 >Fique por dentro</a
               >
             </div>
@@ -192,7 +192,7 @@ export default {
       }
     })
 
-    jQuery('a[href^="#"]').on('click', function (event) {
+    jQuery('.anchor').on('click', function (event) {
       const target = jQuery(jQuery(this).attr('href'))
       if (target.length) {
         event.preventDefault()

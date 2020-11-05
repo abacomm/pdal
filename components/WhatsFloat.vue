@@ -5,7 +5,7 @@
     data-aos-duration="250"
     data-aos-easing="ease-in-out"
     data-aos-delay="50"
-    @click="handleClickWhatsapp"
+    @click="handleMessageWhats"
   >
     <img
       src="img/ic-whats.svg"
@@ -19,12 +19,12 @@
 <script>
 export default {
   data: () => ({
-    url:
-      'https://api.whatsapp.com/send?phone=5521997298823&text=Olá, Tudo bem? Gostaria de mais informações.',
+    url: 'https://api.whatsapp.com/send?phone=5516991659291&text=',
+    message: 'Olá, Tudo bem? Gostaria de mais informações.',
   }),
   methods: {
     handleMessageWhats() {
-      window.open(this.url, '_blank')
+      window.open(this.url + this.message, '_blank')
     },
   },
 }

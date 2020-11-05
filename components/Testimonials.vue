@@ -8,7 +8,7 @@
     data-aos-delay="50"
   >
     <img
-      src="img/img-dots.svg"
+      src="~/assets/img/img-dots.svg"
       alt="Ilustração para composição do layout"
       class="testimonials-dots d-none d-lg-block"
     />
@@ -32,13 +32,13 @@
         <div class="col-lg-6">
           <div class="testimonial-card">
             <img
-              src="img/img-card-1.jpg"
+              src="~/assets/img/img-card-1.jpg"
               alt=""
               class="testimonial-card__image"
             />
             <div class="testimonial-card__detail">
               <img
-                src="img/img-instagram-logo.png"
+                src="~/assets/img/img-instagram-logo.png"
                 alt="Logo do Instagram"
                 class="testimonial-card__icon"
               />
@@ -58,13 +58,13 @@
         <div class="col-lg-6">
           <div class="testimonial-card">
             <img
-              src="img/img-card-2.jpg"
+              src="~/assets/img/img-card-2.jpg"
               alt=""
               class="testimonial-card__image"
             />
             <div class="testimonial-card__detail">
               <img
-                src="img/img-instagram-logo.png"
+                src="~/assets/img/img-instagram-logo.png"
                 alt="Logo do Instagram"
                 class="testimonial-card__icon"
               />
@@ -84,13 +84,13 @@
         <div class="col-lg-6">
           <div class="testimonial-card">
             <img
-              src="img/img-card-3.jpg"
+              src="~/assets/img/img-card-3.jpg"
               alt=""
               class="testimonial-card__image"
             />
             <div class="testimonial-card__detail">
               <img
-                src="img/img-instagram-logo.png"
+                src="~/assets/img/img-instagram-logo.png"
                 alt="Logo do Instagram"
                 class="testimonial-card__icon"
               />
@@ -110,13 +110,13 @@
         <div class="col-lg-6">
           <div class="testimonial-card">
             <img
-              src="img/img-card-4.jpg"
+              src="~/assets/img/img-card-4.jpg"
               alt=""
               class="testimonial-card__image"
             />
             <div class="testimonial-card__detail">
               <img
-                src="img/img-instagram-logo.png"
+                src="~/assets/img/img-instagram-logo.png"
                 alt="Logo do Instagram"
                 class="testimonial-card__icon"
               />

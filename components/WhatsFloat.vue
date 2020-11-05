@@ -8,7 +8,7 @@
     @click="handleMessageWhats"
   >
     <img
-      src="img/ic-whats.svg"
+      src="~/assets/img/ic-whats.svg"
       width="52"
       height="52"
       alt="Fale conosco no whatsapp"

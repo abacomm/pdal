@@ -64,7 +64,9 @@ a.nav-item.nav-link:hover {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5,
+h6 {
   color: #121a21;
   text-transform: uppercase;
 }
@@ -708,7 +710,7 @@ nav {
         rgba(15, 22, 29, 0.55) 0%,
         rgba(40, 49, 57, 0.55) 80%
       ),
-      url('/img/img-hero-background.png');
+      url('/img/img-hero-background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;

@@ -1,7 +1,7 @@
 <template>
   <section id="features-section">
     <img
-      src="img/img-dots.svg"
+      src="~/assets/img/img-dots.svg"
       alt="Ilustração para composição do layout"
       class="features-dots d-none d-lg-block"
     />
@@ -24,11 +24,10 @@
           data-aos-easing="ease-in-out"
         >
           <picture>
-            <source srcset="img/img-features.webp" type="image/webp" />
             <source srcset="img/img-features.png" type="image/png" />
             <img
               class="img-features"
-              src="img/img-features.png"
+              src="~/assets/img/img-features.png"
               alt="Imagem de usuário usando o aplicativo"
             />
           </picture>
@@ -43,7 +42,7 @@
         >
           <div class="row">
             <div class="col-12 col-md-1 mr-lg-3">
-              <img src="img/ic-feature-1.svg" alt="Ícone de coração" />
+              <img src="~/assets/img/ic-feature-1.svg" alt="Ícone de coração" />
             </div>
             <div class="col-12 col-md-10 mt-3 mt-md-0">
               <h2 class="h5"><strong>Ganho de condicionamento</strong></h2>
@@ -56,7 +55,7 @@
           </div>
           <div class="row mt-4">
             <div class="col-12 col-md-1 mr-lg-3">
-              <img src="img/ic-feature-2.svg" alt="Ícone de coração" />
+              <img src="~/assets/img/ic-feature-2.svg" alt="Ícone de coração" />
             </div>
             <div class="col-12 col-md-10 mt-3 mt-md-0">
               <h2 class="h5">
@@ -71,7 +70,7 @@
           </div>
           <div class="row mt-4">
             <div class="col-12 col-md-1 mr-lg-3">
-              <img src="img/ic-feature-3.svg" alt="Ícone de coração" />
+              <img src="~/assets/img/ic-feature-3.svg" alt="Ícone de coração" />
             </div>
             <div class="col-12 col-md-10 mt-3 mt-md-0">
               <h2 class="h5"><strong>Vídeos explicativos</strong></h2>
@@ -87,3 +86,9 @@
     </div>
   </section>
 </template>
+
+<style>
+.features-row .h5 {
+  color: #121a21;
+}
+</style>

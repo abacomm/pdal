@@ -8,7 +8,7 @@
     data-aos-delay="50"
   >
     <img
-      src="img/img-watermark.svg"
+      src="~/assets/img/img-watermark.svg"
       alt="Marca dágua da logo"
       class="watermark d-none d-lg-block"
     />
@@ -19,7 +19,7 @@
             <div class="footer-brand">
               <img
                 class="footer-brand__logo"
-                src="img/logo-pdal-black.svg"
+                src="~/assets/img/logo-pdal-black.svg"
                 alt="Logo do Pdal"
               />
               <p class="mt-4 footer-brand__text">
@@ -41,7 +41,7 @@
                 rel="noopener"
               >
                 <img
-                  src="img/img-instagram-logo.png"
+                  src="~/assets/img/img-instagram-logo.png"
                   width="24"
                   alt="Ícone Instagram"
                 />
@@ -99,22 +99,22 @@
             <ul class="footer-menu__social">
               <!-- <li class="mr-4">
                 <a href="#"
-                  ><img src="img/ic-facebook.svg" alt="Ícone Facebook"
+                  ><img src="~/assets/img/ic-facebook.svg" alt="Ícone Facebook"
                 /></a>
               </li>
               <li class="mr-4">
                 <a href="#"
-                  ><img src="img/ic-twitter.svg" alt="Ícone Twitter"
+                  ><img src="~/assets/img/ic-twitter.svg" alt="Ícone Twitter"
                 /></a>
               </li>
               <li class="mr-4">
                 <a href="#"
-                  ><img src="img/ic-linkedin.svg" alt="Ícone Linkedin"
+                  ><img src="~/assets/img/ic-linkedin.svg" alt="Ícone Linkedin"
                 /></a>
               </li>
               <li class="mr-4">
                 <a href="https://instagram.com/pdaloficial"
-                  ><img src="img/ic-instagram.svg" alt="Ícone Linkedin"
+                  ><img src="~/assets/img/ic-instagram.svg" alt="Ícone Linkedin"
                 /></a>
               </li> -->
             </ul>

@@ -1,6 +1,9 @@
 export default {
   target: 'static',
   head: {
+    htmlAttrs: {
+      lang: 'pt-br',
+    },
     title: 'Pdal',
     meta: [
       { charset: 'utf-8' },
@@ -95,22 +98,50 @@ export default {
       {
         src:
           'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js',
+        async: true,
       },
-      { src: 'https://code.jquery.com/jquery-3.5.1.min.js' },
+      { src: 'https://code.jquery.com/jquery-3.5.1.min.js', async: true },
       {
         src:
           'https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js',
+        async: true,
       },
     ],
   },
   loading: { color: '#f35062' },
   css: ['~/assets/styles/main.css', 'aos/dist/aos.css'],
   components: true,
-  buildModules: ['@nuxtjs/eslint-module', '@nuxtjs/google-fonts'],
-  modules: ['@nuxtjs/pwa', '@nuxt/content'],
+  buildModules: [
+    '@aceforth/nuxt-optimized-images',
+    '@nuxtjs/eslint-module',
+    '@nuxtjs/google-fonts',
+    '@nuxtjs/sitemap',
+    'nuxt-robots-module',
+  ],
+  modules: ['@nuxtjs/pwa', '@nuxt/content', '@nuxtjs/gtm'],
   plugins: [{ src: '@/plugins/aos.js', mode: 'client' }],
   content: {},
   build: {},
+  optimizedImages: {
+    optimizeImages: true,
+  },
+  gtm: {
+    id: 'GTM-XXXXXXX',
+  },
+  sitemap: {
+    path: '/sitemap.xml',
+    hostname: 'https://pdal.com.br',
+    cacheTime: 1000 * 60 * 15,
+    routes: [
+      '/',
+      {
+        url: '/',
+        changefreq: 'daily',
+        priority: 1,
+        lastmodISO: '2020-11-04T13:30:00.000Z',
+      },
+    ],
+  },
   pwa: {
     manifest: {
       name: 'Pdal',

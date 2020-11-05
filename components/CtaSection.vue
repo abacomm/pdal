@@ -1,7 +1,7 @@
 <template>
   <section id="cta-section">
     <img
-      src="img/img-dots.svg"
+      src="~/assets/img/img-dots.svg"
       alt="Ilustração para composição do layout"
       class="cta-dots d-none d-lg-block"
     />
@@ -15,7 +15,7 @@
           data-aos-easing="ease-in-out"
         >
           <img
-            src="img/img-cta.png"
+            src="~/assets/img/img-cta.png"
             alt=""
             class="img-cta d-block d-lg-none mb-4 mb-lg-0"
           />
@@ -30,13 +30,13 @@
           <a href="#" target="_blank" rel="noopener"
             ><img
               class="btn-apple"
-              src="img/img-btn-apple.svg"
+              src="~/assets/img/img-btn-apple.svg"
               alt="Botão para download na AppStore"
           /></a>
           <a href="#" target="_blank" rel="noopener"
             ><img
               class="btn-google"
-              src="img/img-btn-google.svg"
+              src="~/assets/img/img-btn-google.svg"
               alt="Botão para download no Google Play"
           /></a>
           <p class="mt-5 cta-disclaimer d-none d-lg-block">
@@ -55,7 +55,7 @@
             <source srcset="img/img-cta.webp" type="image/webp" />
             <source srcset="img/img-cta.png" type="image/png" />
             <img
-              src="img/img-cta.png"
+              src="~/assets/img/img-cta.png"
               alt=""
               class="img-cta d-none d-lg-block"
             />

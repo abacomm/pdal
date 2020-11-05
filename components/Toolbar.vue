@@ -5,7 +5,7 @@
         <a class="navbar-brand" href="#" title="Voltar ao início"
           ><img
             class="img-logo-pdal"
-            src="img/logo-pdal-black.svg"
+            src="~/assets/img/logo-pdal-black.svg"
             alt="Pdal logo"
             width="110"
             height="44"
@@ -53,7 +53,10 @@
         <!-- NAVBAR -->
         <nav class="navbar navbar-expand-lg navbar-dark">
           <a class="navbar-brand" href="#" title="Voltar ao início"
-            ><img class="img-logo-pdal" src="img/logo-pdal.svg" alt="Pdal logo"
+            ><img
+              class="img-logo-pdal"
+              src="~/assets/img/logo-pdal.svg"
+              alt="Pdal logo"
           /></a>
           <button
             class="navbar-toggler"
@@ -92,16 +95,16 @@
           <div class="col-md-12 col-lg-7">
             <picture>
               <source
-                srcset="img/img-iphone-mock-mobile.webp"
+                srcset="~/assets/img/img-iphone-mock-mobile.webp"
                 type="image/webp"
               />
               <source
-                srcset="img/img-iphone-mock-mobile.png"
+                srcset="~/assets/img/img-iphone-mock-mobile.png"
                 type="image/png"
               />
               <img
                 class="d-block mb-5 mb-lg-none d-lg-none iphone-device iphone-1"
-                src="img/img-iphone-mock-mobile.png"
+                src="~/assets/img/img-iphone-mock-mobile.png"
                 alt="Imagem do aplicativo no iPhone"
               />
             </picture>
@@ -116,29 +119,29 @@
             <a href="#" target="_blank" rel="noopener"
               ><img
                 class="btn-apple"
-                src="img/img-btn-apple.svg"
+                src="~/assets/img/img-btn-apple.svg"
                 alt="Botão para download na AppStore"
             /></a>
             <a href="#" target="_blank" rel="noopener"
               ><img
                 class="btn-google"
-                src="img/img-btn-google.svg"
+                src="~/assets/img/img-btn-google.svg"
                 alt="Botão para download no Google Play"
             /></a>
           </div>
           <div class="col-md-12 col-lg-5 mt-5 mt-lg-0 d-none d-lg-block">
             <picture>
               <source
-                srcset="img/img-iphone-mock-mobile.webp"
+                srcset="~/assets/img/img-iphone-mock-mobile.webp"
                 type="image/webp"
               />
               <source
-                srcset="img/img-iphone-mock-mobile.png"
+                srcset="~/assets/img/img-iphone-mock-mobile.png"
                 type="image/png"
               />
               <img
                 class="iphone-device iphone-2"
-                src="img/img-iphone-mock-mobile.png"
+                src="~/assets/img/img-iphone-mock-mobile.png"
                 alt="Imagem do aplicativo no iPhone"
               />
             </picture>

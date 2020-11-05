@@ -2,7 +2,7 @@
   <div>
     <nav id="fixed-nav" class="fixed-nav">
       <div class="container">
-        <a class="navbar-brand" href="#"
+        <a class="navbar-brand" href="#" title="Voltar ao início"
           ><img
             class="img-logo-pdal"
             src="img/logo-pdal-black.svg"
@@ -21,16 +21,28 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div id="submenu" class="submenu">
-          <a class="nav-item nav-link anchor" href="#features-section"
+          <a
+            class="nav-item nav-link anchor"
+            title="Funcionalidades"
+            href="#features-section"
             >Funcionalidades</a
           >
-          <a class="nav-item nav-link anchor" href="#testimonials-section"
+          <a
+            class="nav-item nav-link anchor"
+            title="Depoimentos"
+            href="#testimonials-section"
             >Depoimentos</a
           >
-          <a class="nav-item nav-link anchor" href="#cta-section"
+          <a
+            class="nav-item nav-link anchor"
+            title="Baixe o aplicativo"
+            href="#cta-section"
             >Baixe o aplicativo</a
           >
-          <a class="nav-item nav-link anchor" href="#newsletter-section"
+          <a
+            class="nav-item nav-link anchor"
+            title="Fique por dentro"
+            href="#newsletter-section"
             >Fique por dentro</a
           >
         </div>
@@ -40,7 +52,7 @@
       <div class="container">
         <!-- NAVBAR -->
         <nav class="navbar navbar-expand-lg navbar-dark">
-          <a class="navbar-brand" href="#"
+          <a class="navbar-brand" href="#" title="Voltar ao início"
             ><img class="img-logo-pdal" src="img/logo-pdal.svg" alt="Pdal logo"
           /></a>
           <button

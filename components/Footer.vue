@@ -28,6 +28,7 @@
                   href="https://www.instagram.com/pdaloficial/"
                   title="Assista no Instagram"
                   target="_blank"
+                  rel="noopener"
                   >Instagram</a
                 >
                 e vamos suar juntos com muita música boa!
@@ -37,6 +38,7 @@
                 href="https://instagram.com/pdaloficial"
                 target="_blank"
                 title="Siga no Instagram"
+                rel="noopener"
               >
                 <img
                   src="img/img-instagram-logo.png"

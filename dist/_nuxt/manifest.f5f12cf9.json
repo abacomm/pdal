@@ -1,5 +1,5 @@
 {
-  "name": "pdal",
+  "name": "Pdal",
   "short_name": "pdal",
   "description": "## Build Setup",
   "icons": [
@@ -49,5 +49,6 @@
   "start_url": "/?standalone=true",
   "display": "standalone",
   "background_color": "#ffffff",
+  "theme_color": "#0f161d",
   "lang": "en"
 }

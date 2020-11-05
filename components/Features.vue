@@ -46,7 +46,7 @@
               <img src="img/ic-feature-1.svg" alt="Ícone de coração" />
             </div>
             <div class="col-12 col-md-10 mt-3 mt-md-0">
-              <h4>Ganho de condicionamento</h4>
+              <h2 class="h5"><strong>Ganho de condicionamento</strong></h2>
               <p>
                 Basta seguir corretamente o comando dos professores no
                 aplicativo e manter sua frequência que seus objetivos serão
@@ -59,7 +59,9 @@
               <img src="img/ic-feature-2.svg" alt="Ícone de coração" />
             </div>
             <div class="col-12 col-md-10 mt-3 mt-md-0">
-              <h4>Planejamento para perda de peso</h4>
+              <h2 class="h5">
+                <strong>Planejamento para perda de peso</strong>
+              </h2>
               <p>
                 Treinos com variação de intensidade, sendo indicado diariamente
                 para obter o melhor resultado. Em nossos treinos, você pode
@@ -72,7 +74,7 @@
               <img src="img/ic-feature-3.svg" alt="Ícone de coração" />
             </div>
             <div class="col-12 col-md-10 mt-3 mt-md-0">
-              <h4>Vídeos explicativos</h4>
+              <h2 class="h5"><strong>Vídeos explicativos</strong></h2>
               <p>
                 Em busca de seu maior conforto, preparamos vídeos que explicam a
                 modalidade e como ajustar a bike para prevenir lesões. Ideal

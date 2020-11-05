@@ -4,8 +4,10 @@ export default {
     title: 'Pdal',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { name: 'theme-color', content: '000000' },
+      {
+        name: 'viewport',
+        content: 'width=device-width, initial-scale=1, viewport-fit=cover',
+      },
       {
         hid: 'description',
         name: 'description',
@@ -28,7 +30,7 @@ export default {
       {
         hid: 'twitter:card',
         name: 'twitter:card',
-        content: 'summary_large_image',
+        content: 'summary',
       },
       {
         hid: 'twitter:description',
@@ -56,19 +58,52 @@ export default {
         href:
           'https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css',
       },
+      {
+        rel: 'dns-prefetch',
+        href: 'https://ajax.googleapis.com',
+      },
+      {
+        rel: 'dns-prefetch',
+        href: 'https://assets.pdal.com.br',
+      },
+      {
+        rel: 'dns-prefetch',
+        href: 'https://fonts.googleapis.com',
+      },
+      {
+        rel: 'dns-prefetch',
+        href: 'https://yt3.ggpht.com',
+      },
+      {
+        rel: 'dns-prefetch',
+        href: 'https://i.ytimg.com',
+      },
+      {
+        rel: 'dns-prefetch',
+        href: 'https://googleads.g.doubleclick.net',
+      },
+      {
+        rel: 'dns-prefetch',
+        href: 'https://www.google.com',
+      },
+      {
+        rel: 'dns-prefetch',
+        href: 'https://static.doubleclick.net',
+      },
     ],
     script: [
       {
         src:
           'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js',
       },
-      { src: 'https://code.jquery.com/jquery-3.3.1.slim.min.js' },
+      { src: 'https://code.jquery.com/jquery-3.5.1.min.js' },
       {
         src:
           'https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js',
       },
     ],
   },
+  loading: { color: '#f35062' },
   css: ['~/assets/styles/main.css', 'aos/dist/aos.css'],
   components: true,
   buildModules: ['@nuxtjs/eslint-module', '@nuxtjs/google-fonts'],
@@ -76,6 +111,12 @@ export default {
   plugins: [{ src: '@/plugins/aos.js', mode: 'client' }],
   content: {},
   build: {},
+  pwa: {
+    manifest: {
+      name: 'Pdal',
+      theme_color: '#0f161d',
+    },
+  },
   googleFonts: {
     families: {
       'Open+Sans': [400, 700],

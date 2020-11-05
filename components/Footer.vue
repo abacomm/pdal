@@ -145,6 +145,7 @@
   font-size: 16px;
   font-weight: 600;
   max-width: 360px;
+  text-align: center;
 }
 .insta-button:hover {
   border-color: #b1b1b1;

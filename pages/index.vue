@@ -22,5 +22,8 @@
 
     <!-- Modal Política de privacidade -->
     <ModalPrivacyPolicy />
+
+    <!-- Whatsapp Float -->
+    <WhatsFloat />
   </div>
 </template>

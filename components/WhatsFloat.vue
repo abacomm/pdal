@@ -20,7 +20,7 @@
 export default {
   data: () => ({
     url:
-      'https://api.whatsapp.com/send?phone=5516991659291&text=Olá, Tudo bem? Gostaria de mais informações.',
+      'https://api.whatsapp.com/send?phone=5521997298823&text=Olá, Tudo bem? Gostaria de mais informações.',
   }),
   methods: {
     handleMessageWhats() {

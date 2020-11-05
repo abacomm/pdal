@@ -11,7 +11,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h5 id="privacityPoliceModalLabel" class="modal-title">
-            Política de privacidade
+            <strong>Política de privacidade</strong>
           </h5>
           <button
             type="button"

@@ -10,7 +10,9 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 id="termsModalLabel" class="modal-title">Termos de uso</h5>
+          <h5 id="termsModalLabel" class="modal-title">
+            <strong>Termos de uso</strong>
+          </h5>
           <button
             type="button"
             class="close"

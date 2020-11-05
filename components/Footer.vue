@@ -22,7 +22,7 @@
                 src="img/logo-pdal-black.svg"
                 alt="Logo do Pdal"
               />
-              <p class="mt-4 mb-5 footer-brand__text">
+              <p class="mt-4 footer-brand__text">
                 Assista as lives diárias pelo
                 <a
                   href="https://www.instagram.com/pdaloficial/"
@@ -32,6 +32,19 @@
                 >
                 e vamos suar juntos com muita música boa!
               </p>
+              <a
+                class="insta-button"
+                href="https://instagram.com/pdaloficial"
+                target="_blank"
+                title="Siga no Instagram"
+              >
+                <img
+                  src="img/img-instagram-logo.png"
+                  width="24"
+                  alt="Ícone Instagram"
+                />
+                Siga no Instagram
+              </a>
             </div>
           </div>
           <div class="col-lg-3">
@@ -96,20 +109,12 @@
                 <a href="#"
                   ><img src="img/ic-linkedin.svg" alt="Ícone Linkedin"
                 /></a>
-              </li> -->
-              <li class="insta-button">
-                <a
-                  href="https://instagram.com/pdaloficial"
-                  target="_blank"
-                  title="Siga no Instagram"
-                  ><img
-                    src="img/ic-instagram.svg"
-                    width="24"
-                    alt="Ícone Instagram"
-                  />
-                  Siga no Instagram
-                </a>
               </li>
+              <li class="mr-4">
+                <a href="https://instagram.com/pdaloficial"
+                  ><img src="img/ic-instagram.svg" alt="Ícone Linkedin"
+                /></a>
+              </li> -->
             </ul>
           </div>
         </div>
@@ -128,3 +133,27 @@
     </footer>
   </section>
 </template>
+
+<style>
+.insta-button {
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  padding: 8px 14px;
+  color: #2b292d;
+  margin-bottom: 20px;
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  max-width: 360px;
+}
+.insta-button:hover {
+  border-color: #b1b1b1;
+  color: #2b292d;
+}
+.insta-button:hover {
+  text-decoration: none;
+}
+.insta-button img {
+  margin-right: 5px;
+}
+</style>

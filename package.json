@@ -50,6 +50,9 @@
     "lint-staged": "^10.4.0",
     "prettier": "^2.1.2",
     "remark-footnotes": "2",
-    "webp-loader": "^0.6.0"
+    "webp-loader": "^0.6.0",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^10.0.5",
+    "fibers": "^5.0.0"
   }
 }

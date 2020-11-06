@@ -1,6 +1,7 @@
 <template>
   <section id="features-section">
     <img
+      v-lazy-load
       src="~/assets/img/img-dots.svg"
       alt="Ilustração para composição do layout"
       class="features-dots d-none d-lg-block"
@@ -26,6 +27,7 @@
           <picture>
             <source srcset="~/assets/img/img-features.png" type="image/png" />
             <img
+              v-lazy-load
               class="img-features"
               src="~/assets/img/img-features.png"
               alt="Imagem de usuário usando o aplicativo"
@@ -42,7 +44,11 @@
         >
           <div class="row">
             <div class="col-12 col-md-1 mr-lg-3">
-              <img src="~/assets/img/ic-feature-1.svg" alt="Ícone de coração" />
+              <img
+                v-lazy-load
+                src="~/assets/img/ic-feature-1.svg"
+                alt="Ícone de coração"
+              />
             </div>
             <div class="col-12 col-md-10 mt-3 mt-md-0">
               <h2 class="h5"><strong>Ganho de condicionamento</strong></h2>
@@ -55,7 +61,11 @@
           </div>
           <div class="row mt-4">
             <div class="col-12 col-md-1 mr-lg-3">
-              <img src="~/assets/img/ic-feature-2.svg" alt="Ícone de coração" />
+              <img
+                v-lazy-load
+                src="~/assets/img/ic-feature-2.svg"
+                alt="Ícone de coração"
+              />
             </div>
             <div class="col-12 col-md-10 mt-3 mt-md-0">
               <h2 class="h5">
@@ -70,7 +80,11 @@
           </div>
           <div class="row mt-4">
             <div class="col-12 col-md-1 mr-lg-3">
-              <img src="~/assets/img/ic-feature-3.svg" alt="Ícone de coração" />
+              <img
+                v-lazy-load
+                src="~/assets/img/ic-feature-3.svg"
+                alt="Ícone de coração"
+              />
             </div>
             <div class="col-12 col-md-10 mt-3 mt-md-0">
               <h2 class="h5"><strong>Vídeos explicativos</strong></h2>

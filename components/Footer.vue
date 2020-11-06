@@ -8,6 +8,7 @@
     data-aos-delay="50"
   >
     <img
+      v-lazy-load
       src="~/assets/img/img-watermark.svg"
       alt="Marca dágua da logo"
       class="watermark d-none d-lg-block"
@@ -18,6 +19,7 @@
           <div class="col-lg-6">
             <div class="footer-brand">
               <img
+                v-lazy-load
                 class="footer-brand__logo"
                 src="~/assets/img/logo-pdal-black.svg"
                 alt="Logo do Pdal"
@@ -41,6 +43,7 @@
                 rel="noopener"
               >
                 <img
+                  v-lazy-load
                   src="~/assets/img/img-instagram-logo.png"
                   width="24"
                   alt="Ícone Instagram"
@@ -100,24 +103,28 @@
               <!-- <li class="mr-4">
                 <a href="#"
                   ><img
+                  v-lazy-load
                    src="~/assets/img/ic-facebook.svg" alt="Ícone Facebook"
                 /></a>
               </li>
               <li class="mr-4">
                 <a href="#"
                   ><img
+                  v-lazy-load
                    src="~/assets/img/ic-twitter.svg" alt="Ícone Twitter"
                 /></a>
               </li>
               <li class="mr-4">
                 <a href="#"
                   ><img
+                  v-lazy-load
                    src="~/assets/img/ic-linkedin.svg" alt="Ícone Linkedin"
                 /></a>
               </li>
               <li class="mr-4">
                 <a href="https://instagram.com/pdaloficial"
                   ><img
+                  v-lazy-load
                    src="~/assets/img/ic-instagram.svg" alt="Ícone Linkedin"
                 /></a>
               </li> -->

@@ -8,6 +8,7 @@
     @click="handleMessageWhats"
   >
     <img
+      v-lazy-load
       src="~/assets/img/ic-whats.svg"
       width="52"
       height="52"

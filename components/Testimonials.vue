@@ -8,6 +8,7 @@
     data-aos-delay="50"
   >
     <img
+      v-lazy-load
       src="~/assets/img/img-dots.svg"
       alt="Ilustração para composição do layout"
       class="testimonials-dots d-none d-lg-block"
@@ -15,14 +16,13 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 offset-lg-2 text-center">
-          <iframe
-            class="video"
-            title="Vídeo de depoimento de cliente"
-            src="https://www.youtube.com/embed/2afCCPSZseI"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen=""
-          ></iframe>
+          <div class="video-overview">
+            <div
+              class="youtube-player"
+              data-id="2afCCPSZseI"
+              @click="loadVideo('2afCCPSZseI')"
+            ></div>
+          </div>
           <h3 class="testimonial-title">
             100% aprovado por quem usa - profissionais ou amadores
           </h3>
@@ -32,12 +32,14 @@
         <div class="col-lg-6">
           <div class="testimonial-card">
             <img
+              v-lazy-load
               src="~/assets/img/img-card-1.jpg"
-              alt=""
+              alt="Foto da Luciana Raab"
               class="testimonial-card__image"
             />
             <div class="testimonial-card__detail">
               <img
+                v-lazy-load
                 src="~/assets/img/img-instagram-logo.png"
                 alt="Logo do Instagram"
                 class="testimonial-card__icon"
@@ -58,12 +60,14 @@
         <div class="col-lg-6">
           <div class="testimonial-card">
             <img
+              v-lazy-load
               src="~/assets/img/img-card-2.jpg"
-              alt=""
+              alt="Foto da Gabriela S. Ribeiro"
               class="testimonial-card__image"
             />
             <div class="testimonial-card__detail">
               <img
+                v-lazy-load
                 src="~/assets/img/img-instagram-logo.png"
                 alt="Logo do Instagram"
                 class="testimonial-card__icon"
@@ -84,12 +88,14 @@
         <div class="col-lg-6">
           <div class="testimonial-card">
             <img
+              v-lazy-load
               src="~/assets/img/img-card-3.jpg"
-              alt=""
+              alt="Foto da Patricia Godinho"
               class="testimonial-card__image"
             />
             <div class="testimonial-card__detail">
               <img
+                v-lazy-load
                 src="~/assets/img/img-instagram-logo.png"
                 alt="Logo do Instagram"
                 class="testimonial-card__icon"
@@ -110,12 +116,14 @@
         <div class="col-lg-6">
           <div class="testimonial-card">
             <img
+              v-lazy-load
               src="~/assets/img/img-card-4.jpg"
-              alt=""
+              alt="Foto da Flávia Nigri"
               class="testimonial-card__image"
             />
             <div class="testimonial-card__detail">
               <img
+                v-lazy-load
                 src="~/assets/img/img-instagram-logo.png"
                 alt="Logo do Instagram"
                 class="testimonial-card__icon"
@@ -135,3 +143,113 @@
     </div>
   </section>
 </template>
+
+<script>
+import jQuery from 'jquery'
+export default {
+  mounted() {
+    this.contentLoaded()
+  },
+  methods: {
+    contentLoaded() {
+      if (process.browser) {
+        // eslint-disable-next-line one-var
+        let div,
+          index,
+          // eslint-disable-next-line prefer-const
+          element = document.getElementsByClassName('youtube-player')
+        for (index = 0; index < element.length; index++) {
+          div = document.createElement('div')
+          div.setAttribute('data-id', element[index].dataset.id)
+          div.innerHTML = this.labnolThumb(element[index].dataset.id)
+          element[index].appendChild(div)
+        }
+      }
+    },
+    labnolThumb(id) {
+      if (process.browser) {
+        // eslint-disable-next-line prefer-const
+        let thumb =
+          '<img src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="Imagem de miniatura youtube">'
+        const play = '<div class="play"></div>'
+        return thumb.replace('ID', id) + play
+      }
+    },
+    loadVideo(id) {
+      if (process.browser) {
+        // eslint-disable-next-line prefer-const
+        let iframe = document.createElement('iframe')
+        // eslint-disable-next-line prefer-const
+        let embed = 'https://www.youtube.com/embed/ID'
+        // eslint-disable-next-line prefer-const
+        let element = jQuery('.youtube-player').find("[data-id='" + id + "']")
+        iframe.setAttribute('src', embed.replace('ID', id))
+        iframe.setAttribute('frameborder', '0')
+        iframe.setAttribute('autoplay', '1')
+        iframe.setAttribute('allowfullscreen', '1')
+        element[0].parentNode.appendChild(iframe, element[0])
+      }
+    },
+  },
+}
+</script>
+
+<style lang="scss">
+.video-overview {
+  margin-top: -76px;
+  margin-bottom: 88px;
+}
+
+.youtube-player {
+  position: relative;
+  padding-bottom: 56.23%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  margin: 5px;
+
+  border-radius: 10px;
+  box-shadow: 0 0 -4px 3px #000;
+  margin: 0 auto;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background: transparent;
+  }
+  img {
+    bottom: 0;
+    display: block;
+    left: 0;
+    margin: auto;
+    max-width: 100%;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: none;
+    height: auto;
+    cursor: pointer;
+    -webkit-transition: 0.4s all;
+    -moz-transition: 0.4s all;
+    transition: 0.4s all;
+    &:hover {
+      -webkit-filter: brightness(75%);
+    }
+  }
+  .play {
+    height: 72px;
+    width: 72px;
+    left: 50%;
+    top: 50%;
+    margin-left: -36px;
+    margin-top: -36px;
+    position: absolute;
+    background: url('//i.imgur.com/TxzC70f.png') no-repeat;
+    cursor: pointer;
+  }
+}
+</style>

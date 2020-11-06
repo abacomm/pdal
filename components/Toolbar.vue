@@ -4,6 +4,7 @@
       <div class="container">
         <a class="navbar-brand" href="#" title="Voltar ao início"
           ><img
+            v-lazy-load
             class="img-logo-pdal"
             src="~/assets/img/logo-pdal-black.svg"
             alt="Pdal logo"
@@ -54,6 +55,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark">
           <a class="navbar-brand" href="#" title="Voltar ao início"
             ><img
+              v-lazy-load
               class="img-logo-pdal"
               src="~/assets/img/logo-pdal.svg"
               alt="Pdal logo"
@@ -103,6 +105,7 @@
                 type="image/png"
               />
               <img
+                v-lazy-load
                 class="d-block mb-5 mb-lg-none d-lg-none iphone-device iphone-1"
                 src="~/assets/img/img-iphone-mock-mobile.png"
                 alt="Imagem do aplicativo no iPhone"
@@ -118,12 +121,14 @@
             </p>
             <a href="#" target="_blank" rel="noopener"
               ><img
+                v-lazy-load
                 class="btn-apple"
                 src="~/assets/img/img-btn-apple.svg"
                 alt="Botão para download na AppStore"
             /></a>
             <a href="#" target="_blank" rel="noopener"
               ><img
+                v-lazy-load
                 class="btn-google"
                 src="~/assets/img/img-btn-google.svg"
                 alt="Botão para download no Google Play"
@@ -140,6 +145,7 @@
                 type="image/png"
               />
               <img
+                v-lazy-load
                 class="iphone-device iphone-2"
                 src="~/assets/img/img-iphone-mock-mobile.png"
                 alt="Imagem do aplicativo no iPhone"

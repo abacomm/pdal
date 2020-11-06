@@ -10,11 +10,15 @@
           data-aos-easing="ease-in-out"
         >
           <picture>
-            <source srcset="img/img-newsletter.webp" type="image/webp" />
-            <source srcset="img/img-newsletter.png" type="image/png" />
+            <source
+              srcset="~/assets/img/img-newsletter.webp"
+              type="image/webp"
+            />
+            <source srcset="~/assets/img/img-newsletter.png" type="image/png" />
             <img
-              src="img/img-newsletter.png"
-              alt=""
+              v-lazy-load
+              src="~/assets/img/img-newsletter.png"
+              alt="Mulheres pedalando"
               class="img-newsletter d-none d-lg-block"
             />
           </picture>
@@ -29,11 +33,12 @@
         >
           <div class="newsletter-box">
             <h1 class="newsletter-box__title">Fique por dentro!</h1>
-            <p class="newsletter-box__description">
+            <label for="input-box" class="newsletter-box__description">
               Receba novidades e anúncios de aulas gratuitas direto na sua caixa
               de e-mail:
-            </p>
+            </label>
             <input
+              id="input-box"
               type="text"
               placeholder="Digite seu melhor e-mail"
               class="newsletter-box__input mb-2 mb-lg-0"

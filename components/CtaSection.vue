@@ -1,6 +1,7 @@
 <template>
   <section id="cta-section">
     <img
+      v-lazy-load
       src="~/assets/img/img-dots.svg"
       alt="Ilustração para composição do layout"
       class="cta-dots d-none d-lg-block"
@@ -15,8 +16,9 @@
           data-aos-easing="ease-in-out"
         >
           <img
+            v-lazy-load
             src="~/assets/img/img-cta.png"
-            alt=""
+            alt="Pessoas com fone de ouvido pedalando"
             class="img-cta d-block d-lg-none mb-4 mb-lg-0"
           />
           <h1 class="cta-title">
@@ -29,12 +31,14 @@
           </p>
           <a href="#" target="_blank" rel="noopener"
             ><img
+              v-lazy-load
               class="btn-apple"
               src="~/assets/img/img-btn-apple.svg"
               alt="Botão para download na AppStore"
           /></a>
           <a href="#" target="_blank" rel="noopener"
             ><img
+              v-lazy-load
               class="btn-google"
               src="~/assets/img/img-btn-google.svg"
               alt="Botão para download no Google Play"
@@ -55,8 +59,9 @@
             <source srcset="img/img-cta.webp" type="image/webp" />
             <source srcset="img/img-cta.png" type="image/png" />
             <img
+              v-lazy-load
               src="~/assets/img/img-cta.png"
-              alt=""
+              alt="Pessoas com fone de ouvido pedalando"
               class="img-cta d-none d-lg-block"
             />
           </picture>

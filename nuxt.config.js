@@ -119,11 +119,11 @@ export default {
   modules: [
     '@nuxtjs/pwa',
     '@nuxt/content',
-    '@nuxtjs/gtm',
     [
       'nuxt-lazy-load',
       {
         defaultImage: false,
+        directiveOnly: true,
       },
     ],
   ],
@@ -132,9 +132,6 @@ export default {
   build: {},
   optimizedImages: {
     optimizeImages: true,
-  },
-  gtm: {
-    id: 'GTM-XXXXXXX',
   },
   sitemap: {
     path: '/sitemap.xml',
@@ -154,6 +151,7 @@ export default {
     manifest: {
       name: 'Pdal',
       theme_color: '#0f161d',
+      start_url: '/',
     },
   },
   googleFonts: {

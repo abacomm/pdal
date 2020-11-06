@@ -4,7 +4,6 @@
       <div class="container">
         <a class="navbar-brand" href="#" title="Voltar ao início"
           ><img
-            v-lazy-load
             class="img-logo-pdal"
             src="~/assets/img/logo-pdal-black.svg"
             alt="Pdal logo"
@@ -55,10 +54,10 @@
         <nav class="navbar navbar-expand-lg navbar-dark">
           <a class="navbar-brand" href="#" title="Voltar ao início"
             ><img
-              v-lazy-load
               class="img-logo-pdal"
               src="~/assets/img/logo-pdal.svg"
               alt="Pdal logo"
+              width="110"
           /></a>
           <button
             class="navbar-toggler"

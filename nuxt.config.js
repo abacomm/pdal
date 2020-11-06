@@ -98,13 +98,11 @@ export default {
       {
         src:
           'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js',
-        async: true,
       },
-      { src: 'https://code.jquery.com/jquery-3.5.1.min.js', async: true },
+      { src: 'https://code.jquery.com/jquery-3.5.1.min.js' },
       {
         src:
           'https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js',
-        async: true,
       },
     ],
   },

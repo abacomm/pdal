@@ -99,22 +99,26 @@
             <ul class="footer-menu__social">
               <!-- <li class="mr-4">
                 <a href="#"
-                  ><img src="~/assets/img/ic-facebook.svg" alt="Ícone Facebook"
+                  ><img
+                   src="~/assets/img/ic-facebook.svg" alt="Ícone Facebook"
                 /></a>
               </li>
               <li class="mr-4">
                 <a href="#"
-                  ><img src="~/assets/img/ic-twitter.svg" alt="Ícone Twitter"
+                  ><img
+                   src="~/assets/img/ic-twitter.svg" alt="Ícone Twitter"
                 /></a>
               </li>
               <li class="mr-4">
                 <a href="#"
-                  ><img src="~/assets/img/ic-linkedin.svg" alt="Ícone Linkedin"
+                  ><img
+                   src="~/assets/img/ic-linkedin.svg" alt="Ícone Linkedin"
                 /></a>
               </li>
               <li class="mr-4">
                 <a href="https://instagram.com/pdaloficial"
-                  ><img src="~/assets/img/ic-instagram.svg" alt="Ícone Linkedin"
+                  ><img
+                   src="~/assets/img/ic-instagram.svg" alt="Ícone Linkedin"
                 /></a>
               </li> -->
             </ul>

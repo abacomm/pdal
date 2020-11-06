@@ -24,7 +24,7 @@
           data-aos-easing="ease-in-out"
         >
           <picture>
-            <source srcset="img/img-features.png" type="image/png" />
+            <source srcset="~/assets/img/img-features.png" type="image/png" />
             <img
               class="img-features"
               src="~/assets/img/img-features.png"

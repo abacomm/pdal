@@ -116,7 +116,17 @@ export default {
     '@nuxtjs/sitemap',
     'nuxt-robots-module',
   ],
-  modules: ['@nuxtjs/pwa', '@nuxt/content', '@nuxtjs/gtm'],
+  modules: [
+    '@nuxtjs/pwa',
+    '@nuxt/content',
+    '@nuxtjs/gtm',
+    [
+      'nuxt-lazy-load',
+      {
+        defaultImage: false,
+      },
+    ],
+  ],
   plugins: [{ src: '@/plugins/aos.js', mode: 'client' }],
   content: {},
   build: {},

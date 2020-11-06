@@ -28,6 +28,7 @@
     "core-js": "^3.6.5",
     "jquery": "^3.5.1",
     "nuxt": "^2.14.6",
+    "nuxt-lazy-load": "^1.2.4",
     "nuxt-robots-module": "^1.5.1"
   },
   "devDependencies": {
@@ -43,8 +44,12 @@
     "eslint-plugin-nuxt": "^1.0.0",
     "eslint-plugin-prettier": "^3.1.4",
     "husky": "^4.3.0",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-pngquant": "^9.0.1",
+    "imagemin-svgo": "^8.0.0",
     "lint-staged": "^10.4.0",
     "prettier": "^2.1.2",
-    "remark-footnotes": "2"
+    "remark-footnotes": "2",
+    "webp-loader": "^0.6.0"
   }
 }

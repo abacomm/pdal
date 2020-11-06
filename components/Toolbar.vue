@@ -8,7 +8,6 @@
             src="~/assets/img/logo-pdal-black.svg"
             alt="Pdal logo"
             width="110"
-            height="44"
         /></a>
         <button
           id="navbar-toggle-fixed"

@@ -110,6 +110,7 @@ p {
   width: 100%;
   height: 75px;
   z-index: 1000;
+  display: flex;
   background: #fff;
   opacity: 0;
   will-change: opacity;

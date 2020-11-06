@@ -162,14 +162,6 @@
 import jQuery from 'jquery'
 export default {
   mounted() {
-    function scrollTo(element) {
-      window.scroll({
-        behavior: 'smooth',
-        left: 0,
-        top:
-          element.offsetTop - document.getElementById('fixed-nav').clientHeight,
-      })
-    }
     window.onscroll = (event) => {
       const scroll = window.pageYOffset
       if (scroll > 100) {
@@ -178,40 +170,38 @@ export default {
         document.querySelector('#fixed-nav').classList.remove('active')
       }
     }
-    document.addEventListener('DOMContentLoaded', function () {
-      // Handler when the DOM is fully loaded
-      const navbarToggle = document.querySelector('#navbar-toggle-fixed')
-      navbarToggle.addEventListener('click', (event) => {
-        const submenu = document.getElementById('submenu')
-        submenu.classList.toggle('active')
-      })
-
-      const heroToggle = document.querySelector('.navbar-toggler')
-      heroToggle.addEventListener('click', (event) => {
-        const submenu = document.getElementById('navbarNavAltMarkup')
-        submenu.classList.toggle('active')
-      })
-
-      const submenuLinks = document.querySelectorAll('#submenu a')
-      for (const link of submenuLinks) {
-        link.addEventListener('click', (event) => {
-          event.preventDefault()
-          const submenu = document.getElementById('submenu')
-          submenu.classList.remove('active')
-          scrollTo(document.querySelector(event.target.hash))
-        })
-      }
-
-      const heroLinks = document.querySelectorAll('#navbarNavAltMarkup a')
-      for (const link of heroLinks) {
-        link.addEventListener('click', (event) => {
-          event.preventDefault()
-          const submenu = document.getElementById('navbarNavAltMarkup')
-          submenu.classList.remove('active')
-          scrollTo(document.querySelector(event.target.hash))
-        })
-      }
+    // Handler when the DOM is fully loaded
+    const navbarToggle = document.querySelector('#navbar-toggle-fixed')
+    navbarToggle.addEventListener('click', (event) => {
+      const submenu = document.getElementById('submenu')
+      submenu.classList.toggle('active')
     })
+
+    const heroToggle = document.querySelector('.navbar-toggler')
+    heroToggle.addEventListener('click', (event) => {
+      const submenu = document.getElementById('navbarNavAltMarkup')
+      submenu.classList.toggle('active')
+    })
+
+    const submenuLinks = document.querySelectorAll('#submenu a')
+    for (const link of submenuLinks) {
+      link.addEventListener('click', (event) => {
+        event.preventDefault()
+        const submenu = document.getElementById('submenu')
+        submenu.classList.remove('active')
+        this.scrollTo(document.querySelector(event.target.hash))
+      })
+    }
+
+    const heroLinks = document.querySelectorAll('#navbarNavAltMarkup a')
+    for (const link of heroLinks) {
+      link.addEventListener('click', (event) => {
+        event.preventDefault()
+        const submenu = document.getElementById('navbarNavAltMarkup')
+        submenu.classList.remove('active')
+        this.scrollTo(document.querySelector(event.target.hash))
+      })
+    }
 
     jQuery('.anchor').on('click', function (event) {
       const target = jQuery(jQuery(this).attr('href'))
@@ -225,6 +215,16 @@ export default {
         )
       }
     })
+  },
+  methods: {
+    scrollTo(element) {
+      window.scroll({
+        behavior: 'smooth',
+        left: 0,
+        top:
+          element.offsetTop - document.getElementById('fixed-nav').clientHeight,
+      })
+    },
   },
 }
 </script>

@@ -93,22 +93,13 @@
         <!-- HERO SECTION -->
         <div class="row align-items-start mt-5">
           <div class="col-md-12 col-lg-7">
-            <picture>
-              <source
-                srcset="~/assets/img/img-iphone-mock-mobile.webp"
-                type="image/webp"
-              />
-              <source
-                srcset="~/assets/img/img-iphone-mock-mobile.png"
-                type="image/png"
-              />
-              <img
-                v-lazy-load
-                class="d-block mb-5 mb-lg-none d-lg-none iphone-device iphone-1"
-                src="~/assets/img/img-iphone-mock-mobile.png"
-                alt="Imagem do aplicativo no iPhone"
-              />
-            </picture>
+            <img
+              v-lazy-load
+              class="d-block mb-5 mb-lg-none d-lg-none iphone-device iphone-1"
+              src="~/assets/img/img-iphone-mock-mobile.png"
+              srcset="img/img-iphone-mock-mobile.png 2x"
+              alt="Imagem do aplicativo no iPhone"
+            />
             <h1 class="hero-title mt-5 text-center text-md-left">
               Você acaba de encontrar as melhores aulas de bike indoor do
               Brasil!
@@ -133,22 +124,13 @@
             /></a>
           </div>
           <div class="col-md-12 col-lg-5 mt-5 mt-lg-0 d-none d-lg-block">
-            <picture>
-              <source
-                srcset="~/assets/img/img-iphone-mock-mobile.webp"
-                type="image/webp"
-              />
-              <source
-                srcset="~/assets/img/img-iphone-mock-mobile.png"
-                type="image/png"
-              />
-              <img
-                v-lazy-load
-                class="iphone-device iphone-2"
-                src="~/assets/img/img-iphone-mock-mobile.png"
-                alt="Imagem do aplicativo no iPhone"
-              />
-            </picture>
+            <img
+              v-lazy-load
+              class="iphone-device iphone-2"
+              src="~/assets/img/img-iphone-mock-mobile.png"
+              srcset="img/img-iphone-mock-mobile.png 2x"
+              alt="Imagem do aplicativo no iPhone"
+            />
           </div>
         </div>
       </div>

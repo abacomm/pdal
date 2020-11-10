@@ -24,16 +24,13 @@
           data-aos-duration="250"
           data-aos-easing="ease-in-out"
         >
-          <picture>
-            <source srcset="~/assets/img/img-features.png" type="image/png" />
-            <img
-              v-lazy-load
-              class="img-features"
-              src="~/assets/img/img-features.png"
-              srcset="img/img-features.png 2x"
-              alt="Imagem de usuário usando o aplicativo"
-            />
-          </picture>
+          <img
+            v-lazy-load
+            class="img-features"
+            src="~/assets/img/img-features.png"
+            srcset="img/img-features.png 2x"
+            alt="Imagem de usuário usando o aplicativo"
+          />
         </div>
         <div
           class="col-lg-6 features-list mt-4 mt-lg-0"

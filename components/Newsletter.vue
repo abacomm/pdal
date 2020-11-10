@@ -9,20 +9,13 @@
           data-aos-duration="250"
           data-aos-easing="ease-in-out"
         >
-          <picture>
-            <source
-              srcset="~/assets/img/img-newsletter.webp"
-              type="image/webp"
-            />
-            <source srcset="~/assets/img/img-newsletter.png" type="image/png" />
-            <img
-              v-lazy-load
-              src="~/assets/img/img-newsletter.png"
-              srcset="img/img-newsletter.png 2x"
-              alt="Mulheres pedalando"
-              class="img-newsletter d-none d-lg-block"
-            />
-          </picture>
+          <img
+            v-lazy-load
+            src="~/assets/img/img-newsletter.png"
+            srcset="img/img-newsletter.png 2x"
+            alt="Mulheres pedalando"
+            class="img-newsletter d-none d-lg-block"
+          />
         </div>
         <div
           class="col-lg-6 px-0 px-md-1 mt-5 mt-lg-0"

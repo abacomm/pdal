@@ -56,17 +56,13 @@
           data-aos-easing="ease-in-out"
           data-aos-delay="50"
         >
-          <picture>
-            <source srcset="img/img-cta.webp" type="image/webp" />
-            <source srcset="img/img-cta.png" type="image/png" />
-            <img
-              v-lazy-load
-              src="~/assets/img/img-cta.png"
-              srcset="img/img-cta.png 2x"
-              alt="Pessoas com fone de ouvido pedalando"
-              class="img-cta d-none d-lg-block"
-            />
-          </picture>
+          <img
+            v-lazy-load
+            src="~/assets/img/img-cta.png"
+            srcset="img/img-cta.png 2x"
+            alt="Pessoas com fone de ouvido pedalando"
+            class="img-cta d-none d-lg-block"
+          />
         </div>
       </div>
     </div>

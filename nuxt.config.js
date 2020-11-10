@@ -150,12 +150,17 @@ export default {
   },
   gtm: {
     id: 'GTM-PML7NMN',
+    pageTracking: true,
   },
   pwa: {
     manifest: {
       name: 'Pdal',
       theme_color: '#0f161d',
-      start_url: '/',
+    },
+    workbox: {
+      enabled: false,
+      cacheAssets: false,
+      offline: false,
     },
   },
   googleFonts: {

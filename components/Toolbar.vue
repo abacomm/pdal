@@ -137,7 +137,6 @@
 </template>
 
 <script>
-import jQuery from 'jquery'
 export default {
   mounted() {
     window.onscroll = (event) => {
@@ -180,19 +179,6 @@ export default {
         this.scrollTo(document.querySelector(event.target.hash))
       })
     }
-
-    jQuery('.anchor').on('click', function (event) {
-      const target = jQuery(jQuery(this).attr('href'))
-      if (target.length) {
-        event.preventDefault()
-        jQuery('html, body').animate(
-          {
-            scrollTop: target.offset().top - 60,
-          },
-          1000
-        )
-      }
-    })
   },
   methods: {
     scrollTo(element) {

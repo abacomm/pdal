@@ -18,6 +18,7 @@
         <div class="col-lg-8 offset-lg-2 text-center">
           <div class="video-overview">
             <div
+              id="2afCCPSZseI"
               class="youtube-player"
               data-id="2afCCPSZseI"
               @click="loadVideo('2afCCPSZseI')"
@@ -145,7 +146,6 @@
 </template>
 
 <script>
-import jQuery from 'jquery'
 export default {
   mounted() {
     this.contentLoaded()
@@ -180,14 +180,17 @@ export default {
         // eslint-disable-next-line prefer-const
         let iframe = document.createElement('iframe')
         // eslint-disable-next-line prefer-const
-        let embed = 'https://www.youtube.com/embed/ID'
+        let embed = 'https://www.youtube.com/embed/ID?autoplay=1'
         // eslint-disable-next-line prefer-const
-        let element = jQuery('.youtube-player').find("[data-id='" + id + "']")
+        let element = document.getElementById(id)
         iframe.setAttribute('src', embed.replace('ID', id))
         iframe.setAttribute('frameborder', '0')
-        iframe.setAttribute('autoplay', '1')
+        iframe.setAttribute(
+          'allow',
+          'accelerometer; autoplay; picture-in-picture'
+        )
         iframe.setAttribute('allowfullscreen', '1')
-        element[0].parentNode.appendChild(iframe, element[0])
+        element.appendChild(iframe, element)
       }
     },
   },
@@ -196,8 +199,7 @@ export default {
 
 <style lang="scss">
 .video-overview {
-  margin-top: -76px;
-  margin-bottom: 88px;
+  margin-bottom: 98px;
 }
 
 .youtube-player {

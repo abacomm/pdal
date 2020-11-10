@@ -18,7 +18,6 @@
           <img
             v-lazy-load
             src="~/assets/img/img-cta.png"
-            srcset="img/img-cta.png 2x"
             alt="Pessoas com fone de ouvido pedalando"
             class="img-cta d-block d-lg-none mb-4 mb-lg-0"
           />
@@ -59,7 +58,6 @@
           <img
             v-lazy-load
             src="~/assets/img/img-cta.png"
-            srcset="img/img-cta.png 2x"
             alt="Pessoas com fone de ouvido pedalando"
             class="img-cta d-none d-lg-block"
           />

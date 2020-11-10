@@ -118,6 +118,7 @@ export default {
   ],
   modules: [
     '@nuxtjs/pwa',
+    '@nuxtjs/gtm',
     '@nuxt/content',
     [
       'nuxt-lazy-load',
@@ -146,6 +147,9 @@ export default {
         lastmodISO: '2020-11-04T13:30:00.000Z',
       },
     ],
+  },
+  gtm: {
+    id: 'GTM-PML7NMN',
   },
   pwa: {
     manifest: {

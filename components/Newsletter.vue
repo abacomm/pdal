@@ -18,6 +18,7 @@
             <img
               v-lazy-load
               src="~/assets/img/img-newsletter.png"
+              srcset="img/img-newsletter.png 2x"
               alt="Mulheres pedalando"
               class="img-newsletter d-none d-lg-block"
             />

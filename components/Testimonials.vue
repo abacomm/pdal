@@ -34,6 +34,7 @@
             <img
               v-lazy-load
               src="~/assets/img/img-card-1.jpg"
+              srcset="img/img-card-1.jpg 2x"
               alt="Foto da Luciana Raab"
               class="testimonial-card__image"
             />
@@ -62,6 +63,7 @@
             <img
               v-lazy-load
               src="~/assets/img/img-card-2.jpg"
+              srcset="img/img-card-2.jpg 2x"
               alt="Foto da Gabriela S. Ribeiro"
               class="testimonial-card__image"
             />
@@ -90,6 +92,7 @@
             <img
               v-lazy-load
               src="~/assets/img/img-card-3.jpg"
+              srcset="img/img-card-3.jpg 2x"
               alt="Foto da Patricia Godinho"
               class="testimonial-card__image"
             />
@@ -118,6 +121,7 @@
             <img
               v-lazy-load
               src="~/assets/img/img-card-4.jpg"
+              srcset="img/img-card-4.jpg 2x"
               alt="Foto da Flávia Nigri"
               class="testimonial-card__image"
             />

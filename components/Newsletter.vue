@@ -20,6 +20,7 @@
           v-if="!successResult"
           class="col-lg-6 px-0 px-md-1 mt-5 mt-lg-0"
           data-aos="fade-up"
+          data-aos-once="true"
           data-aos-duration="250"
           data-aos-easing="ease-in-out"
           data-aos-delay="50"
@@ -38,7 +39,6 @@
               placeholder="Digite seu melhor e-mail"
               class="newsletter-box__input mb-2 mb-lg-0"
               :class="errorClass($v.email)"
-              @keyup.enter="postLead"
             /><button class="newsletter-box__button" @click="postLead">
               Enviar
             </button>

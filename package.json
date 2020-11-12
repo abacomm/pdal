@@ -27,6 +27,7 @@
     "@nuxtjs/pwa": "^3.2.2",
     "@nuxtjs/sitemap": "2.4.0",
     "aos": "^2.3.4",
+    "cross-env": "^7.0.2",
     "dotenv": "^8.2.0",
     "nuxt": "^2.14.7",
     "nuxt-lazy-load": "^1.2.4",

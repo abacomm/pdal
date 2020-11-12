@@ -107,7 +107,10 @@
               Está procurando aulas orientadas com profissionais de alta
               qualidade? Baixe o app e escolha seu treino.
             </p>
-            <a href="#" target="_blank" rel="noopener"
+            <a
+              href="https://apps.apple.com/us/app/pdal/id1529162152"
+              target="_blank"
+              rel="noopener"
               ><img
                 v-lazy-load
                 class="btn-apple"

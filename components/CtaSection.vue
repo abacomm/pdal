@@ -29,7 +29,10 @@
             Baixe o app e venha suar com muita música boa sendo orientadas por
             professores registrados no CREF.
           </p>
-          <a href="#" target="_blank" rel="noopener"
+          <a
+            href="https://apps.apple.com/us/app/pdal/id1529162152"
+            target="_blank"
+            rel="noopener"
             ><img
               v-lazy-load
               class="btn-apple"

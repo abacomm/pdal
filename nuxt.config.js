@@ -110,6 +110,7 @@ export default {
   css: ['~/assets/styles/main.css', 'aos/dist/aos.css'],
   components: true,
   buildModules: [
+    '@nuxtjs/dotenv',
     '@aceforth/nuxt-optimized-images',
     '@nuxtjs/eslint-module',
     '@nuxtjs/google-fonts',
@@ -117,6 +118,7 @@ export default {
     'nuxt-robots-module',
   ],
   modules: [
+    '@nuxtjs/axios',
     '@nuxtjs/pwa',
     '@nuxtjs/gtm',
     '@nuxt/content',
@@ -128,7 +130,13 @@ export default {
       },
     ],
   ],
-  plugins: [{ src: '@/plugins/aos.js', mode: 'client' }],
+  axios: {
+    // proxy: true
+  },
+  plugins: [
+    { src: '~/plugins/aos.js', mode: 'client' },
+    { src: '~/plugins/vuelidate.js' },
+  ],
   content: {},
   build: {},
   optimizedImages: {

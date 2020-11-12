@@ -458,6 +458,11 @@ nav {
   font-weight: 800;
 }
 
+.newsletter-box__text {
+  font-size: 1.375rem;
+  line-height: 1.45;
+}
+
 .newsletter-box__description {
   font-size: 1.375rem;
   line-height: 1.45;
@@ -475,6 +480,7 @@ nav {
 .newsletter-box__button {
   width: 100%;
   background: #f35062;
+  cursor: pointer;
   background-image: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0.05) 0%,

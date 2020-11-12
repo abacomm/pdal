@@ -17,9 +17,9 @@
           />
         </div>
         <div
+          v-if="!successResult"
           class="col-lg-6 px-0 px-md-1 mt-5 mt-lg-0"
           data-aos="fade-up"
-          data-aos-once="true"
           data-aos-duration="250"
           data-aos-easing="ease-in-out"
           data-aos-delay="50"
@@ -32,11 +32,20 @@
             </label>
             <input
               id="input-box"
-              type="text"
+              v-model="$v.email.$model"
+              name="email"
+              type="email"
               placeholder="Digite seu melhor e-mail"
               class="newsletter-box__input mb-2 mb-lg-0"
-            /><button class="newsletter-box__button">Enviar</button>
-            <p class="newsletter-box__disclaimer">
+              :class="errorClass($v.email)"
+              @keyup.enter="postLead"
+            /><button class="newsletter-box__button" @click="postLead">
+              Enviar
+            </button>
+            <p
+              v-if="$v.email.email && $v.email.required"
+              class="newsletter-box__disclaimer"
+            >
               Mantemos o sigilo dos seus dados. Leia nossa
               <a
                 href="#"
@@ -46,9 +55,71 @@
                 >política de privacidade.</a
               >
             </p>
+            <p v-else class="newsletter-box__disclaimer">
+              Por favor preencha o campo de email
+            </p>
+          </div>
+        </div>
+        <div v-if="successResult" class="col-lg-6 px-0 px-md-1 mt-5 mt-lg-0">
+          <div class="newsletter-box">
+            <h1 class="newsletter-box__title">Email cadastrado!</h1>
+            <p class="newsletter-box__text">
+              Você receberá novidades no seu e-mail
+            </p>
           </div>
         </div>
       </div>
     </div>
   </section>
 </template>
+
+<script>
+import { required, email } from 'vuelidate/lib/validators'
+export default {
+  data() {
+    return {
+      email: '',
+      successResult: false,
+    }
+  },
+  validations: {
+    email: {
+      required,
+      email,
+    },
+  },
+  methods: {
+    async postLead() {
+      this.$v.$touch()
+      if (!this.$v.$invalid) {
+        const url = `https://api.rd.services/platform/conversions?api_key=${process.env.API_KEY}`
+        const lead = await this.$axios.$post(url, {
+          event_type: 'CONVERSION',
+          event_family: 'CDP',
+          payload: {
+            conversion_identifier: 'teste_coversion',
+            email: this.email,
+          },
+        })
+        if (lead) {
+          this.email = ''
+          this.successResult = true
+        }
+      }
+    },
+    errorClass(validation) {
+      return {
+        error: validation.$error,
+        dirty: validation.$dirty,
+      }
+    },
+  },
+}
+</script>
+
+<style>
+.error {
+  border-color: #e11c09 !important;
+  background-color: #ffe9e7 !important;
+}
+</style>

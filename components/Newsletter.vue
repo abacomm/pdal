@@ -1,14 +1,15 @@
 <template>
-  <section id="newsletter-section">
+  <section
+    id="newsletter-section"
+    data-aos="fade-up"
+    data-aos-once="true"
+    data-aos-duration="250"
+    data-aos-easing="ease-in-out"
+    data-aos-delay="50"
+  >
     <div class="container">
       <div class="row align-items-center">
-        <div
-          class="col-lg-6"
-          data-aos="fade-up"
-          data-aos-once="true"
-          data-aos-duration="250"
-          data-aos-easing="ease-in-out"
-        >
+        <div class="col-lg-6">
           <img
             v-lazy-load
             src="~/assets/img/img-newsletter.png"
@@ -17,15 +18,7 @@
             class="img-newsletter d-none d-lg-block"
           />
         </div>
-        <div
-          v-if="!successResult"
-          class="col-lg-6 px-0 px-md-1 mt-5 mt-lg-0"
-          data-aos="fade-up"
-          data-aos-once="true"
-          data-aos-duration="250"
-          data-aos-easing="ease-in-out"
-          data-aos-delay="50"
-        >
+        <div v-if="!successResult" class="col-lg-6 px-0 px-md-1 mt-5 mt-lg-0">
           <div class="newsletter-box">
             <h1 class="newsletter-box__title">Fique por dentro!</h1>
             <label for="input-box" class="newsletter-box__description">
@@ -34,7 +27,7 @@
             </label>
             <input
               id="input-box"
-              v-model="$v.email.$model"
+              v-model.trim="$v.email.$model"
               name="email"
               type="email"
               placeholder="Digite seu melhor e-mail"
@@ -43,10 +36,7 @@
             /><button class="newsletter-box__button" @click="postLead">
               Enviar
             </button>
-            <p
-              v-if="$v.email.email && $v.email.required"
-              class="newsletter-box__disclaimer"
-            >
+            <p v-if="$v.email.email" class="newsletter-box__disclaimer">
               Mantemos o sigilo dos seus dados. Leia nossa
               <a
                 href="#"

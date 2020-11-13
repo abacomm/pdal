@@ -92,7 +92,8 @@ export default {
     async postLead() {
       this.$v.$touch()
       if (!this.$v.$invalid) {
-        const url = `https://api.rd.services/platform/conversions?api_key=${process.env.API_KEY}`
+        // const url = `https://api.rd.services/platform/conversions?api_key=${process.env.API_KEY}`
+        const url = `https://api.rd.services/platform/conversions?api_key=b481d22449ab6930973dbfe72e4e9ac8`
         const lead = await this.$axios.$post(url, {
           event_type: 'CONVERSION',
           event_family: 'CDP',

@@ -91,6 +91,7 @@
             <img
               v-lazy-load
               src="~/assets/img/img-card-3.jpg"
+              srcset="img/img-card-3.jpg 2x"
               alt="Foto da Patricia Godinho"
               class="testimonial-card__image"
             />
@@ -119,6 +120,7 @@
             <img
               v-lazy-load
               src="~/assets/img/img-card-4.jpg"
+              srcset="img/img-card-4.jpg 2x"
               alt="Foto da Flávia Nigri"
               class="testimonial-card__image"
             />
@@ -170,7 +172,7 @@ export default {
       if (process.browser) {
         // eslint-disable-next-line prefer-const
         let thumb =
-          '<img src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="Imagem de miniatura youtube">'
+          '<img src="https://i.ytimg.com/vi/ID/hqdefault.jpg" srcset="https://i.ytimg.com/vi/ID/hqdefault.jpg 2x" alt="Imagem de miniatura youtube">'
         const play = '<div class="play"></div>'
         return thumb.replace('ID', id) + play
       }

@@ -97,6 +97,7 @@
               v-lazy-load
               class="d-block mb-5 mb-lg-none d-lg-none iphone-device iphone-1"
               src="~/assets/img/img-iphone-mock-mobile.png"
+              srcset="img/img-iphone-mock-mobile.png 2x"
               alt="Imagem do aplicativo no iPhone"
             />
             <h1 class="hero-title mt-5 text-center text-md-left">
@@ -130,6 +131,7 @@
               v-lazy-load
               class="iphone-device iphone-2"
               src="~/assets/img/img-iphone-mock-mobile.png"
+              srcset="img/img-iphone-mock-mobile.png 2x"
               alt="Imagem do aplicativo no iPhone"
             />
           </div>

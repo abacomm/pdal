@@ -28,6 +28,7 @@
             v-lazy-load
             class="img-features"
             src="~/assets/img/img-features.png"
+            srcset="img/img-features.png 2x"
             alt="Imagem de usuário usando o aplicativo"
           />
         </div>

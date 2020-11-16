@@ -84,7 +84,7 @@ export default {
       this.$v.$touch()
       if (!this.$v.$invalid) {
         const lead = await this.$axios.$post(
-          `${process.env.BASE_API}/create-lead?email=${this.email}`
+          `https://api.pdal.abcdev.net/create-lead?email=${this.email}`
         )
         if (lead) {
           this.email = ''

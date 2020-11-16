@@ -84,12 +84,12 @@ export default {
       this.$v.$touch()
       if (!this.$v.$invalid) {
         const lead = await this.$axios.$post(
-          'https://www.pdal.com.br/.netlify/functions/createLead',
+          'https://pdal.com.br/.netlify/functions/createLead',
           {
             event_type: 'CONVERSION',
             event_family: 'CDP',
             payload: {
-              conversion_identifier: 'teste_coversion_func',
+              conversion_identifier: 'teste_coversion',
               email: this.email,
             },
           }

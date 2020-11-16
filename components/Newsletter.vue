@@ -83,16 +83,9 @@ export default {
     async postLead() {
       this.$v.$touch()
       if (!this.$v.$invalid) {
-        const url = `https://pdal.com.br/.netlify/functions/createLead`
-        const lead = await this.$axios.$post(url, {
-          event_type: 'CONVERSION',
-          event_family: 'CDP',
-          payload: {
-            conversion_identifier: 'teste_coversion',
-            email: this.email,
-          },
-        })
-        console.log('lead', lead)
+        const lead = await this.$axios.$post(
+          `${this.$root.context.env.BASE_API}/create-lead?email=${this.email}`
+        )
         if (lead) {
           this.email = ''
           this.successResult = true

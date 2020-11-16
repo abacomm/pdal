@@ -84,7 +84,7 @@ export default {
       this.$v.$touch()
       if (!this.$v.$invalid) {
         const lead = await this.$axios.$post(
-          `${this.$root.context.env.BASE_API}/create-lead?email=${this.email}`
+          `${process.env.BASE_API}/create-lead?email=${this.email}`
         )
         if (lead) {
           this.email = ''

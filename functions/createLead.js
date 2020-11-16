@@ -18,7 +18,7 @@ exports.handler = async (event, context, callback) => {
     data: JSON.stringify(body),
   })
     .then((response) => {
-      return response.data
+      return response
     })
     .catch((err) => callback(err))
 }

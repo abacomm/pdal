@@ -1,21 +1,22 @@
 const axios = require('axios')
 const { API_KEY } = process.env
 
-exports.handler = async (event, context, callback) => {
+exports.handler = (event, context, callback) => {
   if (event.httpMethod !== 'POST') {
     return { statusCode: 405, body: 'Method Not Allowed' }
   }
 
+  const body = JSON.parse(event.body)
   const url = 'https://api.rd.services/platform/conversions'
 
-  const response = await axios({
+  axios({
     method: 'post',
     url: `${url}?api_key=${API_KEY}`,
     headers: {
       'content-type': 'application/json',
     },
-    data: JSON.stringify(event.body),
+    data: JSON.stringify(body),
   })
-
-  return { statusCode: response.status, body: response.data }
+    .then((response) => ({ statusCode: response.status, body: response.data }))
+    .catch((err) => callback(err))
 }

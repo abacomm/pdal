@@ -9,7 +9,7 @@ exports.handler = (event, context, callback) => {
   const body = JSON.parse(event.body)
   const url = 'https://api.rd.services/platform/conversions'
 
-  axios({
+  return axios({
     method: 'post',
     url: `${url}?api_key=${API_KEY}`,
     headers: {

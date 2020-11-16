@@ -81,17 +81,19 @@ export default {
   },
   methods: {
     async postLead() {
-      console.log('api-key', process.env.API_KEY)
       this.$v.$touch()
       if (!this.$v.$invalid) {
-        const lead = await this.$axios.$post('/.netlify/functions/createLead', {
-          event_type: 'CONVERSION',
-          event_family: 'CDP',
-          payload: {
-            conversion_identifier: 'teste_coversion',
-            email: this.email,
-          },
-        })
+        const lead = await this.$axios.$post(
+          'https://www.pdal.com.br/.netlify/functions/createLead',
+          {
+            event_type: 'CONVERSION',
+            event_family: 'CDP',
+            payload: {
+              conversion_identifier: 'teste_coversion_func',
+              email: this.email,
+            },
+          }
+        )
         if (lead) {
           this.email = ''
           this.successResult = true

@@ -1,13 +1,13 @@
-import fetch from 'node-fetch'
+const axios = require('axios')
 
-const url = `https://api.rd.services/platform/conversions?api_key=${process.env.API_KEY}`
+exports.handler = function createLead(data, callback) {
+  const url = `https://api.rd.services/platform/conversions`
+  const apiKey = process.env.API_KEY
 
-exports.handler = (data) => {
-  return fetch(url, { method: 'POST', body: JSON.stringify(data) })
-    .then((response) => response.json())
-    .then((data) => ({
-      statusCode: 200,
-      body: data,
-    }))
-    .catch((error) => ({ statusCode: 422, body: String(error) }))
+  axios
+    .post(`${url}?api_key=${apiKey}`, data)
+    .then((response) => response)
+    .catch((e) => {
+      callback(e)
+    })
 }

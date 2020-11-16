@@ -6,6 +6,7 @@ exports.handler = async (event, context, callback) => {
     return { statusCode: 405, body: 'Method Not Allowed' }
   }
 
+  const body = JSON.parse(event.body)
   const url = 'https://api.rd.services/platform/conversions'
 
   await axios({
@@ -14,7 +15,7 @@ exports.handler = async (event, context, callback) => {
     headers: {
       'content-type': 'application/json',
     },
-    data: event.body,
+    data: JSON.stringify(body),
   })
     .then((response) =>
       callback({ statusCode: response.status, body: response.data })

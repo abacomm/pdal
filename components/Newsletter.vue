@@ -83,11 +83,13 @@ export default {
     async postLead() {
       this.$v.$touch()
       if (!this.$v.$invalid) {
-        await this.$axios.$post(
+        const lead = await this.$axios.$post(
           `https://api.pdal.abcdev.net/create-lead?email=${this.email}`
         )
-        this.email = ''
-        this.successResult = true
+        if (lead) {
+          this.email = ''
+          this.successResult = true
+        }
       }
     },
     errorClass(validation) {

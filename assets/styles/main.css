@@ -177,8 +177,7 @@ section {
 .btn-apple,
 .btn-google {
   display: block;
-  margin-top: 1rem;
-  width: 220px;
+  width: 254px;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -576,6 +575,10 @@ nav {
 @media only screen and (min-width: 575px) {
   .video {
     height: 400px;
+  }
+
+  .hero-section {
+    text-align: center;
   }
 
   .btn-apple,

@@ -9,7 +9,7 @@
     <div class="container">
       <div class="row align-items-start">
         <div
-          class="col-lg-7"
+          class="hero-section col-lg-7"
           data-aos="fade-up"
           data-aos-once="true"
           data-aos-duration="250"

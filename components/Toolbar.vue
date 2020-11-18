@@ -92,7 +92,7 @@
       <div class="container">
         <!-- HERO SECTION -->
         <div class="row align-items-start mt-5">
-          <div class="col-md-12 col-lg-7">
+          <div class="hero-section col-md-12 col-lg-7">
             <img
               v-lazy-load
               class="d-block mb-5 mb-lg-none d-lg-none iphone-device iphone-1"

@@ -108,17 +108,14 @@
               Está procurando aulas orientadas com profissionais de alta
               qualidade? Baixe o app e escolha seu treino.
             </p>
-            <a
-              href="https://apps.apple.com/us/app/pdal/id1529162152"
-              target="_blank"
-              rel="noopener"
+            <a href="#" target="_blank" rel="noopener" class="coming-soon"
               ><img
                 v-lazy-load
                 class="btn-apple"
                 src="~/assets/img/img-btn-apple.svg"
                 alt="Botão para download na AppStore"
             /></a>
-            <a href="#" target="_blank" rel="noopener"
+            <a href="#" target="_blank" rel="noopener" class="coming-soon"
               ><img
                 v-lazy-load
                 class="btn-google"
@@ -197,3 +194,35 @@ export default {
   },
 }
 </script>
+
+<style lang="scss">
+.coming-soon {
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  &:before {
+    position: absolute;
+    left: 99px;
+    top: 15px;
+    width: 100%;
+    padding: 2px 0;
+    text-align: center;
+    background: #db2c3b;
+    z-index: 9;
+    color: #fff;
+    content: 'Em breve';
+    transform: rotateZ(42deg);
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: -0.03em;
+  }
+  img {
+    &:hover {
+      transform: translateY(0) !important;
+      transition: all 0.2s ease-in-out;
+      cursor: default;
+    }
+  }
+}
+</style>

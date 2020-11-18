@@ -23,50 +23,110 @@
           </button>
         </div>
         <div class="modal-body">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          blandit feugiat libero, iaculis tempor orci euismod ut. Aenean vel mi
-          id magna malesuada euismod. Vestibulum eget tortor nibh. Ut maximus
-          bibendum interdum. Nulla porttitor vulputate velit, vel scelerisque
-          augue rutrum quis. Nunc eu euismod tellus. Aenean sapien nibh,
-          bibendum eu orci nec, dapibus convallis nisl. Nullam tristique ex id
-          tellus aliquet venenatis. Integer imperdiet quis lacus in fermentum.
-          Cras id posuere velit. Aliquam ipsum lectus, pretium a enim eget,
-          sodales efficitur justo. Morbi maximus ipsum congue pulvinar viverra.
-          Nullam finibus tempor iaculis. Duis at felis non velit molestie
-          pharetra ut vel felis. Cras et aliquet mauris. Pellentesque posuere
-          nisl quis justo viverra consequat ut eget risus. Sed iaculis ac nisl
-          et iaculis. Aenean ligula velit, ultrices non convallis ut, dictum vel
-          est. Integer nec purus neque. Sed condimentum interdum ex, sed
-          ullamcorper lectus mollis eu. Suspendisse et urna condimentum,
-          malesuada turpis id, venenatis dolor. Donec a neque ac massa rhoncus
-          ornare nec id lacus. Sed et justo ultricies, scelerisque erat non,
-          iaculis velit. Phasellus est velit, elementum vel libero rutrum,
-          ultrices fermentum lorem. Pellentesque tristique nunc sit amet justo
-          dapibus tempor. Ut nec porttitor nibh, at laoreet diam. Sed ac ipsum
-          sit amet sem consectetur condimentum efficitur eu nunc. Duis euismod
-          tellus sit amet erat pulvinar hendrerit. Curabitur sed pharetra erat.
-          Donec elementum diam a ligula varius mollis. Pellentesque egestas quis
-          purus at pharetra. Pellentesque et metus nec nunc scelerisque
-          pulvinar. Maecenas nunc tellus, congue in lectus non, cursus venenatis
-          dui. Duis pharetra eu mauris eget ullamcorper. Donec hendrerit ac
-          mauris ut facilisis. Maecenas tincidunt sem ut cursus sollicitudin.
-          Praesent suscipit blandit ligula at dignissim. Nam egestas tortor
-          odio. Nullam aliquet libero et diam dapibus, id ultrices magna
-          blandit. Mauris eget justo sapien. Nam rutrum massa rutrum consectetur
-          dignissim. Duis lobortis lorem eu turpis sagittis feugiat. In
-          imperdiet posuere aliquam. Nulla facilisi. Sed sed metus eu nisi
-          efficitur egestas quis et elit. Quisque dapibus lacus in velit
-          vehicula, at congue elit venenatis. Donec ultricies libero vel mauris
-          fringilla posuere. Curabitur interdum ligula in viverra congue. Aenean
-          semper metus purus, nec tristique mi tristique tincidunt. Integer
-          aliquet, metus et fermentum finibus, diam magna mollis risus, vitae
-          ultricies elit orci ut purus. Integer condimentum purus viverra elit
-          sodales euismod. Maecenas laoreet lorem pellentesque, fermentum est
-          venenatis, pellentesque lorem. Nulla sed vestibulum libero. Vestibulum
-          tortor est, suscipit imperdiet molestie eget, porta vitae nunc. Donec
-          eget consectetur purus. Ut non orci eu massa dignissim rhoncus semper
-          eu dui. Nam nec purus blandit, mattis velit venenatis, pharetra sem.
-          Praesent molestie est vel dolor imperdiet, in commodo arcu eleifend.
+          <p>
+            <strong>SEÇÃO 1 - O QUE FAREMOS COM ESTA INFORMAÇÃO? </strong><br />
+            Quando você acessa nosso site ou aplicativo, recebemos
+            automaticamente o protocolo de internet de seu dispositivo, endereço
+            de IP, a fim de obter informações que nos ajudam a aprender sobre
+            seu navegador e sistema operacional. Quando você faz login no
+            aplicativo através de qualquer um dos sistemas de autenticação
+            (Apple, Google, ou Facebook), nós também recebemos e armazenamos as
+            informações cadastrais informadas por esses parceiros. Essas
+            informações cadastrais podem incluir: endereço de e-mail, telefone,
+            e nome. O fornecimento dessas informações é parte do protocolo de
+            autenticação, e o Pdal usa esses dados única e exclusivamente para
+            identificação e autenticação dos usuários; essas informações não são
+            vendidas ou comercializadas de nenhuma forma. Email Marketing será
+            realizado apenas caso você permita. Nestes emails você poderá
+            receber notícia sobre novos produtos e outras atualizações.
+          </p>
+          <p>
+            <strong>SEÇÃO 2 - CONSENTIMENTO</strong> <br />
+            Como vocês obtêm meu consentimento? Quando você faz login no app
+            através de qualquer uma das plataformas de autenticação, você
+            consente que a plataforma correspondente envie para o Pdal suas
+            informações cadastrais, bem como consente que armazenemos e usemos
+            essas informações internamente. Ao utilizar o app você também está
+            consentindo que o Pdal colete dados sobre seu uso do aplicativo. Se
+            pedimos por suas informações pessoais por uma razão secundária, como
+            marketing, vamos lhe pedir diretamente por seu consentimento, ou lhe
+            fornecer a oportunidade de dizer não. # E caso você queira retirar
+            seu consentimento, como proceder? Se após você nos fornecer seus
+            dados, você mudar de ideia, você pode retirar o seu consentimento
+            para que possamos entrar em contato, para a coleção de dados
+            contínua, uso ou divulgação de suas informações, a qualquer momento,
+            entrando em contato conosco pelo nosso telefone (21) 99729- 8823.
+          </p>
+          <p>
+            <strong>SEÇÃO 3 - DIVULGAÇÃO </strong><br />
+            Podemos divulgar suas informações pessoais caso sejamos obrigados
+            pela lei para fazê-lo ou se você violar nossos Termos de Serviço.
+          </p>
+          <p>
+            <strong>SEÇÃO 4 - SERVIÇOS DE TERCEIROS </strong><br />
+            No geral, os fornecedores terceirizados usados por nós irão apenas
+            coletar, usar e divulgar suas informações na medida do necessário
+            para permitir que eles realizem os serviços que eles nos fornecem. o
+            Pdal pode precisar trafegar em plataformas de empresas terceiras os
+            dados de uso do aplicativo, bem como os informações identificadoras
+            (e.g.: e-mail, telefone). Esses dados são usados para aprimorar
+            nossos serviços. Informações identificadoras têm única e
+            exclusivamente a função de identificação, e não são compartilhados
+            com outras empresas que porventura utilizem essas mesmas plataformas
+            ou quaisquer outros terceiros. Os prestadores de serviços usados
+            pelo Pdal não têm de forma alguma autorização para comercializar ou
+            divulgar esses dados, exceto se compelidos a fazê-lo por força de
+            lei. O Pdal não coleta, armazena, ou manipula dados financeiros
+            relativos aos meios de pagamento; tendo controle única e
+            exclusivamente sobre o sucesso ou não das transações financeiras
+            relativas a subscrição ou outros serviços e produtos. Entretanto,
+            certos fornecedores de serviços terceirizados, tais como gateways de
+            pagamento e outros processadores de transação de pagamento, têm suas
+            próprias políticas de privacidade com respeito à informação que
+            somos obrigados a fornecer para eles de suas transações relacionadas
+            com compras. Para esses fornecedores, recomendamos que você leia
+            suas políticas de privacidade para que você possa entender a maneira
+            na qual suas informações pessoais serão usadas por esses
+            fornecedores. Em particular, lembre-se que certos fornecedores podem
+            ser localizados em ou possuir instalações que são localizadas em
+            jurisdições diferentes que você ou nós. Assim, se você quer
+            continuar com uma transação que envolve os serviços de um fornecedor
+            de serviço terceirizado, então suas informações podem tornar-se
+            sujeitas às leis da(s) jurisdição(ões) nas quais o fornecedor de
+            serviço ou suas instalações estão localizados. Como um exemplo, se
+            você está localizado no Canadá e sua transação é processada por um
+            gateway de pagamento localizado nos Estados Unidos, então suas
+            informações pessoais usadas para completar aquela transação podem
+            estar sujeitas a divulgação sob a legislação dos Estados Unidos,
+            incluindo o Ato Patriota. Uma vez que você deixe o site da nossa
+            loja ou seja redirecionado para um aplicativo ou site de terceiros,
+            você não será mais regido por essa Política de Privacidade ou pelos
+            Termos de Serviço do nosso site.
+          </p>
+          <p>
+            <strong>SEÇÃO 5 - SEGURANÇA E PRIVACIDADE </strong><br />
+            Para proteger suas informações pessoais, tomamos precauções
+            razoáveis e seguimos as melhores práticas da indústria para nos
+            certificar que elas não serão perdidas inadequadamente, usurpadas,
+            acessadas, divulgadas, alteradas ou destruídas.
+          </p>
+          <p>
+            <strong
+              >SEÇÃO 6 - ALTERAÇÕES PARA ESSA POLÍTICA DE PRIVACIDADE </strong
+            ><br />
+            Reservamos o direito de modificar essa política de privacidade a
+            qualquer momento, então por favor, revise-a com frequência.
+            Alterações e esclarecimentos vão surtir efeito imediatamente após
+            sua publicação no site e no app. Se fizermos alterações de materiais
+            para essa política, iremos notificá-lo aqui que eles foram
+            atualizados, para que você tenha ciência sobre quais informações
+            coletamos, como as usamos, e sob que circunstâncias, se alguma,
+            usamos e/ou divulgamos elas. Se nosso site e aplicativo forem
+            adquiridos por outra empresa, suas informações podem ser
+            transferidas para os novos proprietários para que possamos continuar
+            a vender produtos e serviços para você. Nosso telefone:
+            (21)99729-8823
+          </p>
         </div>
       </div>
     </div>

@@ -23,50 +23,41 @@
           </button>
         </div>
         <div class="modal-body">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          blandit feugiat libero, iaculis tempor orci euismod ut. Aenean vel mi
-          id magna malesuada euismod. Vestibulum eget tortor nibh. Ut maximus
-          bibendum interdum. Nulla porttitor vulputate velit, vel scelerisque
-          augue rutrum quis. Nunc eu euismod tellus. Aenean sapien nibh,
-          bibendum eu orci nec, dapibus convallis nisl. Nullam tristique ex id
-          tellus aliquet venenatis. Integer imperdiet quis lacus in fermentum.
-          Cras id posuere velit. Aliquam ipsum lectus, pretium a enim eget,
-          sodales efficitur justo. Morbi maximus ipsum congue pulvinar viverra.
-          Nullam finibus tempor iaculis. Duis at felis non velit molestie
-          pharetra ut vel felis. Cras et aliquet mauris. Pellentesque posuere
-          nisl quis justo viverra consequat ut eget risus. Sed iaculis ac nisl
-          et iaculis. Aenean ligula velit, ultrices non convallis ut, dictum vel
-          est. Integer nec purus neque. Sed condimentum interdum ex, sed
-          ullamcorper lectus mollis eu. Suspendisse et urna condimentum,
-          malesuada turpis id, venenatis dolor. Donec a neque ac massa rhoncus
-          ornare nec id lacus. Sed et justo ultricies, scelerisque erat non,
-          iaculis velit. Phasellus est velit, elementum vel libero rutrum,
-          ultrices fermentum lorem. Pellentesque tristique nunc sit amet justo
-          dapibus tempor. Ut nec porttitor nibh, at laoreet diam. Sed ac ipsum
-          sit amet sem consectetur condimentum efficitur eu nunc. Duis euismod
-          tellus sit amet erat pulvinar hendrerit. Curabitur sed pharetra erat.
-          Donec elementum diam a ligula varius mollis. Pellentesque egestas quis
-          purus at pharetra. Pellentesque et metus nec nunc scelerisque
-          pulvinar. Maecenas nunc tellus, congue in lectus non, cursus venenatis
-          dui. Duis pharetra eu mauris eget ullamcorper. Donec hendrerit ac
-          mauris ut facilisis. Maecenas tincidunt sem ut cursus sollicitudin.
-          Praesent suscipit blandit ligula at dignissim. Nam egestas tortor
-          odio. Nullam aliquet libero et diam dapibus, id ultrices magna
-          blandit. Mauris eget justo sapien. Nam rutrum massa rutrum consectetur
-          dignissim. Duis lobortis lorem eu turpis sagittis feugiat. In
-          imperdiet posuere aliquam. Nulla facilisi. Sed sed metus eu nisi
-          efficitur egestas quis et elit. Quisque dapibus lacus in velit
-          vehicula, at congue elit venenatis. Donec ultricies libero vel mauris
-          fringilla posuere. Curabitur interdum ligula in viverra congue. Aenean
-          semper metus purus, nec tristique mi tristique tincidunt. Integer
-          aliquet, metus et fermentum finibus, diam magna mollis risus, vitae
-          ultricies elit orci ut purus. Integer condimentum purus viverra elit
-          sodales euismod. Maecenas laoreet lorem pellentesque, fermentum est
-          venenatis, pellentesque lorem. Nulla sed vestibulum libero. Vestibulum
-          tortor est, suscipit imperdiet molestie eget, porta vitae nunc. Donec
-          eget consectetur purus. Ut non orci eu massa dignissim rhoncus semper
-          eu dui. Nam nec purus blandit, mattis velit venenatis, pharetra sem.
-          Praesent molestie est vel dolor imperdiet, in commodo arcu eleifend.
+          <p>
+            Termos e Condições de uso dos serviços e produtos Pdal, com sede na
+            Avenida Visconde de Albuquerque 1136/ 704- Leblon, Rio de Janeiro/RJ
+            cujo o CEP 22450-000, doravante denominada simplesmente Pdal, e, de
+            outro lado, o cliente Pdal, qualificado no momento da compra dos
+            produtos Pdal, doravante denominado simplesmente Cliente.
+            Considerando que o Pdal realiza venda de produtos e serviços pela
+            internet; Considerando o interesse do Cliente na compra dos produtos
+            oferecidos pela Pdal ("Produtos") em seus canais de venda;
+          </p>
+          <p>
+            I. Confidencialidade: é de responsabilidade do Pdal a preservação da
+            confidencialidade de todos os dados e informações fornecidos pelo
+            Cliente.
+          </p>
+
+          <p>
+            II. Serviço de Atendimento ao Cliente (SAC): O cliente dispõe desse
+            serviço para sanar suas dúvidas, solucionar eventuais solicitações
+            ou reclamações a respeito do seu pedido ou de qualquer conteúdo
+            disponibilizado no site. O SAC poderá ser acionado por meio do
+            telefone: (21)99729-8823
+          </p>
+          <p>
+            III. Direito de arrependimento: ao Cliente será facultado o
+            exercício do direito de arrependimento da compra, com a finalidade
+            de devolução do Produto, hipótese na qual deverão ser observadas as
+            seguintes condições: o prazo de desistência da compra do produto é
+            de até 7 (sete) dias corridos, a contar da data do recebimento.
+          </p>
+          <p>
+            IV - O Cliente deverá solicitar a devolução através do Serviço de
+            Atendimento ao Cliente (SAC) ou diretamente pelo telefone:
+            (21)99729-8823 com o assunto "cancelar pedido".
+          </p>
         </div>
       </div>
     </div>

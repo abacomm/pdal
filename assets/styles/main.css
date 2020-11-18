@@ -577,10 +577,6 @@ nav {
     height: 400px;
   }
 
-  .hero-section {
-    text-align: center;
-  }
-
   .btn-apple,
   .btn-google {
     display: inline-block;
@@ -785,6 +781,9 @@ nav {
 }
 
 @media all and (max-width: 991px) {
+  .hero-section {
+    text-align: center;
+  }
   .navbar-collapse {
     height: 0;
     overflow: hidden;

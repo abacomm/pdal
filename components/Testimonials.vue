@@ -169,13 +169,11 @@ export default {
       }
     },
     labnolThumb(id) {
-      if (process.browser) {
-        // eslint-disable-next-line prefer-const
-        let thumb =
-          '<img src="https://i.ytimg.com/vi/ID/hqdefault.jpg" srcset="https://i.ytimg.com/vi/ID/hqdefault.jpg 2x" alt="Imagem de miniatura youtube">'
-        const play = '<div class="play"></div>'
-        return thumb.replace('ID', id) + play
-      }
+      // eslint-disable-next-line prefer-const
+      let thumb =
+        '<img src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="Imagem de miniatura youtube">'
+      const play = '<div class="play"></div>'
+      return thumb.replace('ID', id) + play
     },
     loadVideo(id) {
       if (process.browser) {

@@ -5,7 +5,6 @@
         class="img-logo-pdal"
         src="~/assets/img/logo-pdal-black.svg"
         alt="Pdal logo"
-        width="110"
       />
 
       <n-link to="/" class="btn-cta"> Voltar para o início </n-link>
@@ -34,7 +33,7 @@
   font-weight: 600;
 
   &:hover {
-    color: #fff;
+    color: #444;
     text-decoration: none;
   }
 }

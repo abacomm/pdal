@@ -432,6 +432,16 @@ nav {
   top: 25%;
 }
 
+/* STATIC */
+.entry-div .entry-title {
+  margin-bottom: 30px;
+  text-transform: none;
+}
+
+.entry-content strong {
+  color: #212121;
+}
+
 /* NEWSLETTER */
 
 #newsletter-section {

@@ -46,18 +46,6 @@
             disponibilizado no site. O SAC poderá ser acionado por meio do
             telefone: (21)99729-8823
           </p>
-          <p>
-            III. Direito de arrependimento: ao Cliente será facultado o
-            exercício do direito de arrependimento da compra, com a finalidade
-            de devolução do Produto, hipótese na qual deverão ser observadas as
-            seguintes condições: o prazo de desistência da compra do produto é
-            de até 7 (sete) dias corridos, a contar da data do recebimento.
-          </p>
-          <p>
-            IV - O Cliente deverá solicitar a devolução através do Serviço de
-            Atendimento ao Cliente (SAC) ou diretamente pelo telefone:
-            (21)99729-8823 com o assunto "cancelar pedido".
-          </p>
         </div>
       </div>
     </div>

@@ -83,7 +83,7 @@ export default {
     async postLead() {
       this.$v.$touch()
       if (!this.$v.$invalid) {
-        const query = `email=${this.email}&conversion_identifier=Formulário do Site Pdal&traffic_source=Site&traffic_medium="Site"&traffic_campaign="site-pdal"&traffic_value="Site Pdal"`
+        const query = `email=${this.email}&conversion_identifier=Formulário do Site Pdal&traffic_source=Site&traffic_medium=Site&traffic_campaign=site-pdal&traffic_value=Site Pdal`
         const url = `https://api.pdal.abcdev.net/create-lead?${query}`
         const lead = await this.$axios.$post(url)
         if (lead) {

@@ -132,3 +132,21 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  head() {
+    return {
+      title: 'Pdal - Política de privacidade',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            'Pdal - Aulas de Cycling pelo celular com os melhores professores.',
+        },
+      ],
+    }
+  },
+}
+</script>

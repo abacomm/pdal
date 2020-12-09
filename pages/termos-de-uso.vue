@@ -42,3 +42,21 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  head() {
+    return {
+      title: 'Pdal - Termos de uso',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            'Pdal - Aulas de Cycling pelo celular com os melhores professores.',
+        },
+      ],
+    }
+  },
+}
+</script>

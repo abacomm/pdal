@@ -30,20 +30,31 @@
             Baixe o app e venha suar com muita música boa sendo orientadas por
             professores registrados no CREF.
           </p>
-          <a href="#" target="_blank" rel="noopener" class="coming-soon"
-            ><img
-              v-lazy-load
-              class="btn-apple"
-              src="~/assets/img/img-btn-apple.svg"
-              alt="Botão para download na AppStore"
-          /></a>
-          <a href="#" target="_blank" rel="noopener" class="coming-soon"
-            ><img
-              v-lazy-load
-              class="btn-google"
-              src="~/assets/img/img-btn-google.svg"
-              alt="Botão para download no Google Play"
-          /></a>
+          <div class="cta-buttons">
+            <a
+              href="https://apps.apple.com/app/id1529162152"
+              target="_blank"
+              rel="noopener"
+              title="Download do aplicativo na AppStore"
+              ><img
+                v-lazy-load
+                class="btn-apple"
+                src="~/assets/img/img-btn-apple.svg"
+                alt="Botão para download na AppStore"
+            /></a>
+            <a
+              href="/"
+              target="_blank"
+              rel="noopener"
+              class="coming-soon"
+              title="Download do aplicativo no Google Play"
+              ><img
+                v-lazy-load
+                class="btn-google"
+                src="~/assets/img/img-btn-google.svg"
+                alt="Botão para download no Google Play"
+            /></a>
+          </div>
           <p class="mt-5 cta-disclaimer d-none d-lg-block">
             Créditos disponíveis para aulas gratuitas no aplicativo.
           </p>
@@ -70,10 +81,15 @@
 </template>
 
 <style lang="scss">
+.cta-buttons {
+  a {
+    margin: 10px;
+  }
+}
 .coming-soon {
   position: relative;
   overflow: hidden;
-  display: inline-flex;
+  display: inline-table;
   &:before {
     position: absolute;
     left: 99px;

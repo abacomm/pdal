@@ -108,20 +108,25 @@
               Está procurando aulas orientadas com profissionais de alta
               qualidade? Baixe o app e escolha seu treino.
             </p>
-            <a href="#" target="_blank" rel="noopener" class="coming-soon"
-              ><img
-                v-lazy-load
-                class="btn-apple"
-                src="~/assets/img/img-btn-apple.svg"
-                alt="Botão para download na AppStore"
-            /></a>
-            <a href="#" target="_blank" rel="noopener" class="coming-soon"
-              ><img
-                v-lazy-load
-                class="btn-google"
-                src="~/assets/img/img-btn-google.svg"
-                alt="Botão para download no Google Play"
-            /></a>
+            <div class="hero-buttons">
+              <a
+                href="https://apps.apple.com/app/id1529162152"
+                target="_blank"
+                rel="noopener"
+                ><img
+                  v-lazy-load
+                  class="btn-apple"
+                  src="~/assets/img/img-btn-apple.svg"
+                  alt="Botão para download na AppStore"
+              /></a>
+              <a href="#" target="_blank" rel="noopener" class="coming-soon"
+                ><img
+                  v-lazy-load
+                  class="btn-google"
+                  src="~/assets/img/img-btn-google.svg"
+                  alt="Botão para download no Google Play"
+              /></a>
+            </div>
           </div>
           <div class="col-md-12 col-lg-5 mt-5 mt-lg-0 d-none d-lg-block">
             <img
@@ -196,10 +201,15 @@ export default {
 </script>
 
 <style lang="scss">
+.hero-buttons {
+  a {
+    margin: 10px;
+  }
+}
 .coming-soon {
   position: relative;
   overflow: hidden;
-  display: inline-flex;
+  display: inline-table;
   &:before {
     position: absolute;
     left: 99px;

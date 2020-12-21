@@ -43,10 +43,9 @@
                 alt="Botão para download na AppStore"
             /></a>
             <a
-              href="/"
+              href="https://play.google.com/store/apps/details?id=com.abacomm.pdal"
               target="_blank"
               rel="noopener"
-              class="coming-soon"
               title="Download do aplicativo no Google Play"
               ><img
                 v-lazy-load

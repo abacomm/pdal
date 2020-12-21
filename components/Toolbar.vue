@@ -119,7 +119,10 @@
                   src="~/assets/img/img-btn-apple.svg"
                   alt="Botão para download na AppStore"
               /></a>
-              <a href="#" target="_blank" rel="noopener" class="coming-soon"
+              <a
+                href="https://play.google.com/store/apps/details?id=com.abacomm.pdal"
+                target="_blank"
+                rel="noopener"
                 ><img
                   v-lazy-load
                   class="btn-google"
